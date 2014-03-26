@@ -3,17 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>app</key>
-	<string>com.bohemiancoding.sketch</string>
+	<string>com.bohemiancoding.sketch.internal</string>
 	<key>build</key>
-	<integer>5355</integer>
+	<integer>7365</integer>
 	<key>commit</key>
-	<string>b7d299b0a34651d1a0e066786b75aa36168d5809</string>
+	<string>6480a1ba021fc29405e04a714bc97e936de502ef</string>
 	<key>fonts</key>
 	<array>
-		<string>Helvetica</string>
-		<string>Helvetica</string>
-		<string>Helvetica</string>
-		<string>Helvetica</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
@@ -86,13 +82,80 @@
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Medium</string>
 		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Medium</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
@@ -162,8 +225,8 @@
 		<string>HelveticaNeue-Light</string>
 	</array>
 	<key>length</key>
-	<integer>1769739</integer>
+	<integer>2526464</integer>
 	<key>version</key>
-	<integer>18</integer>
+	<integer>36</integer>
 </dict>
 </plist>
