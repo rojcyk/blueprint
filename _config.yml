@@ -1,0 +1,15 @@
+source:      .
+
+permalink:	/:title
+
+exclude: [Gruntfile.js, package.json, node_modules, assets/less]
+
+title:		Strip
+tagline: 'Site tagline'
+description:	'Site description'
+tags: 'tags'
+url:		http://internets.com
+
+author:
+  name: author
+  url: http://whatever.com

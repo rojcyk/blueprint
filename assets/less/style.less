@@ -1,0 +1,228 @@
+@import 'tapmates_mixins.less';
+
+// FONT SETTINGS
+///////////////////////////////////////////////
+// Better helvetica from
+// http://css-tricks.com/snippets/css/better-helvetica/
+// http://css-tricks.com/snippets/css/font-stacks/
+
+@fontHelvetica   : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// GRID SYSTEM
+///////////////////////////////////////////////
+
+@spacingBig             : 40px;
+@spacingSmall           : 14px;
+
+@width                  : 960px;
+
+// Fonts
+///////////////////////////////////////////////
+
+@fontSizePercent        : 62.5%;
+@fontSize               : 16px;
+
+@fontExtraSmall         : 0.6;
+@fontSmall              : 0.8;
+@fontDefault            : 1;
+@fontMedium             : 1.2;
+@fontLarge              : 1.4;
+@fontExtraLarge         : 3;
+
+@fontLight              : 300;
+@fontRegular            : 400;
+@fontBold               : 600;
+
+@fontLineSmall          : 100%;
+@fontLineDefault        : 135%;
+@fontLineMedium         : 176%;
+@fontLineBig            : 190%;
+
+// COLORS
+///////////////////////////////////////////////
+
+@white                  : #fefefe;
+@black                  : #2c2c2c;
+@blue                   : #4e5bff;
+@orange                 : #ff8800;
+
+*, *:before, *:after {
+ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html,
+body,
+div,
+section,
+header,
+footer,
+code,
+h1, h2, h3, h4, h5, h6,
+span,
+p,
+nav,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  .size(100%,100%);
+}
+
+body {
+  font-size: @fontSize;
+  font-family: @fontHelvetica;
+  line-height: @fontLineMedium;
+  font-weight: @fontLight;
+  color: white;
+  background-color: @blue;
+}
+
+h1 {
+  .size(100%, 3);
+  .font-size(@fontExtraLarge);
+  
+  margin-top: 48%;
+  margin-bottom: 2*@spacingBig;
+
+  text-align: right;
+  font-weight: @fontRegular;
+}
+
+
+svg {
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: @spacingBig;
+  
+  position: absolute;
+  right: 0;
+}
+
+.bluestrap {
+  .size(@width,100%);
+  .align-horizontally();
+  
+  position: relative;
+}
+
+article {
+  .size(50%,100%);
+  
+  position: absolute;
+  left: 0;
+}
+ a { color: white; }
+
+p {
+  .font-size(@fontLarge);
+  
+  text-align: right;
+  line-height: @fontLineMedium;
+  margin-bottom: @spacingBig + @spacingSmall;
+  
+  a {
+    font-style: italic;
+    border-bottom: 2px white solid;
+    text-decoration: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.download {
+  .size(@width / 3, 4rem);
+  
+  position: absolute;
+  right: 0;
+  
+  background-color: @white;
+  opacity: 0;
+  
+  border: 2px white solid;
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  
+  -webkit-animation: upslide 1s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 1.3s;
+  -webkit-animation-fill-mode: forwards;
+  
+  &:hover {
+  }
+  
+  a {
+    .square(100%);
+    display: block;
+    
+    color: @blue;
+    
+    font-weight: @fontBold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3.8rem;
+  }
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 179px;
+  margin-right: 133px;
+  
+  opacity: 0;
+  width: 212px;
+  height:380px;
+  
+  background-image: url("../img/screen.png");
+  
+  -webkit-animation: invisible 1s ease-in-out;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-delay:1.3s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.iphone {
+  fill: none;
+
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 0;
+  
+  -webkit-animation: dash 2s ease-in alternate;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 3000;
+  }
+  to {
+    stroke-dashoffset: 0;
+   }
+}
+
+@-webkit-keyframes upslide {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+   }
+}
+
+@-webkit-keyframes invisible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+   }
+}
