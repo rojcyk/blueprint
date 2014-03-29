@@ -85,7 +85,7 @@ h1 {
   .font-size(@fontExtraLarge);
   
   margin-top: 48%;
-  margin-bottom: 2*@spacingBig;
+  margin-bottom: @spacingBig + @spacingSmall;
 
   text-align: right;
   font-weight: @fontRegular;
@@ -93,6 +93,7 @@ h1 {
 
 span {
   color: rgba(255,255,255,0.3);
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 svg {
@@ -122,6 +123,7 @@ article {
 p {
   .font-size(@fontLarge);
   
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: right;
   line-height: @fontLineMedium;
   margin-bottom: @spacingBig + @spacingSmall;
@@ -129,6 +131,7 @@ p {
   
   i {
     color: rgba(255,255,255,1);
+    font-family: @fontHelvetica;
   }
   
   a {
