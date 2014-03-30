@@ -46,9 +46,7 @@
 @blue                   : #4e5bff;
 @orange                 : #ff8800;
 
-*, *:before, *:after {
- -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
 html,
 body,
@@ -84,7 +82,7 @@ h1 {
   .size(100%, 3);
   .font-size(@fontExtraLarge);
   
-  margin-top: 48%;
+  margin-top: 40%;
   margin-bottom: @spacingBig + @spacingSmall;
 
   text-align: right;
@@ -103,13 +101,6 @@ svg {
   
   position: absolute;
   right: 0;
-}
-
-.bluestrap {
-  .size(@width,100%);
-  .align-horizontally();
-  
-  position: relative;
 }
 
 article {
@@ -147,24 +138,56 @@ p {
   }
 }
 
+.strip {
+  .size(@width,100%);
+  .align-horizontally();
+
+  position: relative;
+}
+
+.iphone {
+  fill: none;
+
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 0;
+
+  -webkit-animation: dash 2s ease-in alternate;
+  animation: dash 2s ease-in alternate;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 179px;
+  margin-right: 133px;
+
+  opacity: 0;
+  width: 212px;
+  height:380px;
+
+  background-image: url("../img/screen.png");
+
+  -webkit-animation: invisible 1s ease-out 1 1.3s forwards;
+  animation: invisible 1s ease-out 1 1.3s forwards;
+
+}
+
 .download {
   .size(@width / 3, 4rem);
   
   position: absolute;
   right: 0;
   
-  background-color: @white;
   opacity: 0;
-  
+  background-color: @white;
   border: 2px white solid;
   border-radius: 1rem;
   -moz-border-radius: 1rem;
   -webkit-border-radius: 1rem;
   
-  -webkit-animation: upslide 1s ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-delay: 1.3s;
-  -webkit-animation-fill-mode: forwards;
+  -webkit-animation: download 1s ease-out 1 2s forwards;
+  animation: download 1s ease-out 1 2s forwards;
   
   &:hover {
   }
@@ -182,44 +205,60 @@ p {
   }
 }
 
-.screen {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 179px;
-  margin-right: 133px;
-  
+.author {
+  .font-size(@fontDefault);
+
   opacity: 0;
-  width: 212px;
-  height:380px;
-  
-  background-image: url("../img/screen.png");
-  
-  -webkit-animation: invisible 1s ease-in-out;
-  -webkit-animation-iteration-count:1;
-  -webkit-animation-delay:1.3s;
-  -webkit-animation-fill-mode: forwards;
-}
 
-.iphone {
-  fill: none;
+  -webkit-animation: author 1s ease-in-out 1 2.5s forwards;
+  animation: author 1s ease-in-out 1 2.5s forwards;
 
-  stroke-dasharray: 3000;
-  stroke-dashoffset: 0;
-  
-  -webkit-animation: dash 2s ease-in alternate;
+  a { border-bottom: 1px rgba(255,255,255,0.3) solid; }
 }
 
 @-webkit-keyframes dash {
+  from {  stroke-dashoffset: 3000;}
+  to {    stroke-dashoffset: 0;}
+}
+
+@keyframes dash {
+  from {  stroke-dashoffset: 3000;}
+  to {    stroke-dashoffset: 0;}
+}
+
+@-webkit-keyframes invisible {
+  from {  opacity: 0;}
+  to {    opacity: 1;}
+}
+
+@keyframes invisible {
+  from {  opacity: 0;}
+  to {    opacity: 1;}
+}
+
+@-webkit-keyframes author {
   from {
-    stroke-dashoffset: 3000;
+    opacity: 0;
+    margin-top: 12rem;
   }
   to {
-    stroke-dashoffset: 0;
+    opacity: 1;
+    margin-top: 10rem;
    }
 }
 
-@-webkit-keyframes upslide {
+@keyframes author {
+  from {
+    opacity: 0;
+    margin-top: 12rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 10rem;
+   }
+}
+
+@-webkit-keyframes download {
   from {
     opacity: 0;
     margin-top: 30px;
@@ -230,11 +269,13 @@ p {
    }
 }
 
-@-webkit-keyframes invisible {
+@keyframes download {
   from {
     opacity: 0;
+    margin-top: 30px;
   }
   to {
     opacity: 1;
+    margin-top: 0;
    }
 }

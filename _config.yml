@@ -10,6 +10,8 @@ description:	'Site description'
 tags: 'tags'
 url:		http://internets.com
 
-author:
-  name: author
-  url: http://whatever.com
+project:
+  name: project
+  url: http://grginc.github.io/ios-bootstrap
+  github: https://github.com/grginc/ios-bootstrap
+  download: http://codeload.github.com/grginc/ios-bootstrap/zip/master
