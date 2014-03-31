@@ -19,13 +19,9 @@
 // Fonts
 ///////////////////////////////////////////////
 
-@fontSizePercent        : 62.5%;
-@fontSize               : 16px;
+@fontSize               : 62.5%;
 
-@fontExtraSmall         : 0.6;
-@fontSmall              : 0.8;
 @fontDefault            : 1;
-@fontMedium             : 1.2;
 @fontLarge              : 1.4;
 @fontExtraLarge         : 3;
 
@@ -121,23 +117,32 @@ article {
 p {
   .font-size(@fontLarge);
   
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: right;
-  line-height: @fontLineMedium;
   margin-bottom: @spacingBig + @spacingSmall;
+  
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: @fontLineMedium;
+  text-align: right;
+  
   color: rgba(255,255,255,0.7);
   
+  a, i, b {color: rgba(255,255,255,1);}
+  
   i {
-    color: rgba(255,255,255,1);
     font-family: @fontHelvetica;
+    font-weight: @fontLight;
+  }
+  
+  b {
+    font-family: @fontHelvetica;
+    font-weight: @fontRegular;
   }
   
   a {
-    color: rgba(255,255,255,1);
     font-style: italic;
-    border-bottom: 2px white solid;
     text-decoration: none;
     font-family: Georgia, "Times New Roman", Times, serif;
+    
+    border-bottom: 2px white solid;
     
     &:hover {
       border-bottom: none;
@@ -188,7 +193,6 @@ p {
   
   opacity: 0;
   background-color: @white;
-  border: 2px white solid;
   border-radius: 1rem;
   -moz-border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -201,6 +205,8 @@ p {
   
   a {
     .square(100%);
+    .font-size(@fontDefault);
+      
     display: block;
     
     color: @blue;
