@@ -5,9 +5,9 @@
 	<key>app</key>
 	<string>com.bohemiancoding.sketch.internal</string>
 	<key>build</key>
-	<integer>7461</integer>
+	<integer>7465</integer>
 	<key>commit</key>
-	<string>2bba38ce01780069f89c7a02085aeffad3d840e3</string>
+	<string>1838709b94a2b998b96718cca34c27cc678b8d90</string>
 	<key>fonts</key>
 	<array>
 		<string>HelveticaNeue-Light</string>
@@ -156,87 +156,9 @@
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue-Medium</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue</string>
-		<string>HelveticaNeue-Medium</string>
 	</array>
 	<key>length</key>
-	<integer>2437246</integer>
+	<integer>1877966</integer>
 	<key>version</key>
 	<integer>36</integer>
 </dict>
