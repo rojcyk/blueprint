@@ -10,19 +10,31 @@
 	<string>1838709b94a2b998b96718cca34c27cc678b8d90</string>
 	<key>fonts</key>
 	<array>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Medium</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Medium</string>
+		<string>HelveticaNeue-Medium</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
-		<string>HelveticaNeue-Light</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
+		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
@@ -88,7 +100,6 @@
 		<string>HelveticaNeue</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue</string>
-		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
 		<string>HelveticaNeue-Light</string>
@@ -158,7 +169,7 @@
 		<string>HelveticaNeue-Light</string>
 	</array>
 	<key>length</key>
-	<integer>1877966</integer>
+	<integer>1633622</integer>
 	<key>version</key>
 	<integer>36</integer>
 </dict>
