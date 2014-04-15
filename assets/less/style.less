@@ -6,7 +6,25 @@
 // http://css-tricks.com/snippets/css/better-helvetica/
 // http://css-tricks.com/snippets/css/font-stacks/
 
-@fontHelvetica   : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+@fontHelvetica  : "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@fontSerif      : "Droid Serif", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+@fontSans       : "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // GRID SYSTEM
 ///////////////////////////////////////////////
@@ -23,7 +41,7 @@
 
 @fontDefault            : 1;
 @fontLarge              : 1.4;
-@fontExtraLarge         : 3;
+@fontExtraLarge         : 2.7;
 
 @fontLight              : 300;
 @fontRegular            : 400;
@@ -74,9 +92,9 @@ html, body {
 
 body {
   font-size: @fontSize;
-  font-family: @fontHelvetica;
+  font-family: @fontSans;
   line-height: @fontLineMedium;
-  font-weight: @fontLight;
+  font-weight: @fontRegular;
   color: white;
   background-color: @blue;
 }
@@ -119,7 +137,7 @@ p {
   
   margin-bottom: @spacingBig + @spacingSmall;
   
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: @fontSerif;
   line-height: @fontLineMedium;
   text-align: right;
   
@@ -128,19 +146,19 @@ p {
   a, i, b {color: rgba(255,255,255,1);}
   
   i {
-    font-family: @fontHelvetica;
+    font-family: @fontSans;
     font-weight: @fontLight;
   }
   
   b {
-    font-family: @fontHelvetica;
+    font-family: @fontSans;
     font-weight: @fontRegular;
   }
   
   a {
     font-style: italic;
     text-decoration: none;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: @fontSerif;
     
     border-bottom: 2px white solid;
     
@@ -150,7 +168,31 @@ p {
   }
 }
 
-.strip {
+footer {
+  .size(100%,auto);
+  .align-horizontally();
+  
+  position: absolute;
+  bottom: 0;
+  
+  p {
+    .font-size(0.7);
+    font-family: @fontHelvetica;
+    
+    margin-bottom: 0;
+    
+    opacity: 0.7;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  a {
+    font-style: normal;
+    border-bottom: 0.3px #fff solid;
+  }
+}
+
+.blueprint {
   .size(@width,100%);
   .align-horizontally();
 
@@ -214,7 +256,7 @@ p {
     font-weight: @fontBold;
     text-decoration: none;
     text-align: center;
-    line-height: 3.8rem;
+    line-height: 4rem;
   }
 }
 
