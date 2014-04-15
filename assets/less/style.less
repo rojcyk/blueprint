@@ -1,0 +1,336 @@
+@import 'tapmates_mixins.less';
+
+// FONT SETTINGS
+///////////////////////////////////////////////
+// Better helvetica from
+// http://css-tricks.com/snippets/css/better-helvetica/
+// http://css-tricks.com/snippets/css/font-stacks/
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+@fontHelvetica  : "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@fontSerif      : "Droid Serif", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+
+@fontSans       : "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// GRID SYSTEM
+///////////////////////////////////////////////
+
+@spacingBig             : 40px;
+@spacingSmall           : 14px;
+
+@width                  : 960px;
+
+// Fonts
+///////////////////////////////////////////////
+
+@fontSize               : 62.5%;
+
+@fontDefault            : 1;
+@fontLarge              : 1.4;
+@fontExtraLarge         : 2.7;
+
+@fontLight              : 300;
+@fontRegular            : 400;
+@fontBold               : 600;
+
+@fontLineSmall          : 100%;
+@fontLineDefault        : 135%;
+@fontLineMedium         : 176%;
+@fontLineBig            : 190%;
+
+// COLORS
+///////////////////////////////////////////////
+
+@white                  : #fefefe;
+@black                  : #2c2c2c;
+@blue                   : #4e5bff;
+@orange                 : #ff8800;
+
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+html,
+body,
+div,
+section,
+header,
+footer,
+code,
+h1, h2, h3, h4, h5, h6,
+span,
+p,
+nav,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.load * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+html, body {
+  .size(100%,100%);
+}
+
+body {
+  font-size: @fontSize;
+  font-family: @fontSans;
+  line-height: @fontLineMedium;
+  font-weight: @fontRegular;
+  color: white;
+  background-color: @blue;
+}
+
+h1 {
+  .size(100%, 3);
+  .font-size(@fontExtraLarge);
+  
+  margin-top: 40%;
+  margin-bottom: @spacingBig + @spacingSmall;
+
+  text-align: right;
+  font-weight: @fontRegular;
+}
+
+span {
+  color: rgba(255,255,255,0.3);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+svg {
+  width: 50%;
+  margin-top: 100px;
+  margin-bottom: @spacingBig;
+  
+  position: absolute;
+  right: 0;
+}
+
+article {
+  .size(50%,100%);
+  
+  position: absolute;
+  left: 0;
+}
+ a { color: white; }
+
+p {
+  .font-size(@fontLarge);
+  
+  margin-bottom: @spacingBig + @spacingSmall;
+  
+  font-family: @fontSerif;
+  line-height: @fontLineMedium;
+  text-align: right;
+  
+  color: rgba(255,255,255,0.7);
+  
+  a, i, b {color: rgba(255,255,255,1);}
+  
+  i {
+    font-family: @fontSans;
+    font-weight: @fontLight;
+  }
+  
+  b {
+    font-family: @fontSans;
+    font-weight: @fontRegular;
+  }
+  
+  a {
+    font-style: italic;
+    text-decoration: none;
+    font-family: @fontSerif;
+    
+    border-bottom: 2px white solid;
+    
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+footer {
+  .size(100%,auto);
+  .align-horizontally();
+  
+  position: absolute;
+  bottom: 0;
+  
+  p {
+    .font-size(0.7);
+    font-family: @fontHelvetica;
+    
+    margin-bottom: 0;
+    
+    opacity: 0.7;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  a {
+    font-style: normal;
+    border-bottom: 0.3px #fff solid;
+  }
+}
+
+.blueprint {
+  .size(@width,100%);
+  .align-horizontally();
+
+  position: relative;
+}
+
+.iphone {
+  fill: none;
+
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 0;
+
+  -webkit-animation: dash 2s ease-in alternate;
+  animation: dash 2s ease-in alternate;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 179px;
+  margin-right: 133px;
+
+  opacity: 0;
+  width: 212px;
+  height:380px;
+
+  background-image: url("../img/screen.png");
+
+  -webkit-animation: invisible 1s ease-out 1 1.3s forwards;
+  animation: invisible 1s ease-out 1 1.3s forwards;
+
+}
+
+.download {
+  .size(@width / 3, 4rem);
+  
+  position: absolute;
+  right: 0;
+  
+  opacity: 0;
+  background-color: @white;
+  border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  
+  -webkit-animation: download 1s ease-out 1 2s forwards;
+  animation: download 1s ease-out 1 2s forwards;
+  
+  &:hover {
+  }
+  
+  a {
+    .square(100%);
+    .font-size(@fontDefault);
+      
+    display: block;
+    
+    color: @blue;
+    
+    font-weight: @fontBold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 4rem;
+  }
+}
+
+.author {
+  .font-size(@fontDefault);
+
+  opacity: 0;
+
+  -webkit-animation: author 1s ease-in-out 1 2.5s forwards;
+  animation: author 1s ease-in-out 1 2.5s forwards;
+
+  a { border-bottom: 1px rgba(255,255,255,0.3) solid; }
+}
+
+@-webkit-keyframes dash {
+  from {  stroke-dashoffset: 3000;}
+  to {    stroke-dashoffset: 0;}
+}
+
+@keyframes dash {
+  from {  stroke-dashoffset: 3000;}
+  to {    stroke-dashoffset: 0;}
+}
+
+@-webkit-keyframes invisible {
+  from {  opacity: 0;}
+  to {    opacity: 1;}
+}
+
+@keyframes invisible {
+  from {  opacity: 0;}
+  to {    opacity: 1;}
+}
+
+@-webkit-keyframes author {
+  from {
+    opacity: 0;
+    margin-top: 12rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 10rem;
+   }
+}
+
+@keyframes author {
+  from {
+    opacity: 0;
+    margin-top: 12rem;
+  }
+  to {
+    opacity: 1;
+    margin-top: 10rem;
+   }
+}
+
+@-webkit-keyframes download {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+   }
+}
+
+@keyframes download {
+  from {
+    opacity: 0;
+    margin-top: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+   }
+}
