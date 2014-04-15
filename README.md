@@ -2,9 +2,9 @@
 
 Blueprint is a simple sketch iOS template. It has all the stuff necessary for designing iOS apps right away.
 
-## Why launch?
+## Why Blueprint?
 
-Launch was develop as a missing piece in our workflow here [@tapmates](http://tapmates.com/). I made it as we needed it to be.
+Blueprint was develop as a missing piece in our workflow here [@tapmates](http://tapmates.com/). I made it as we needed it to be.
 
 ## 70% less BS than in other templates
 
