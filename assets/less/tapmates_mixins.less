@@ -17,8 +17,8 @@
   position: absolute;
   top:  50%;
   left: 50%;
-  margin-top: -(@height / 2);
-  margin-left: -(@width / 2);
+  margin-top: unit(-(@height / 2), rem);
+  margin-left: unit(-(@width / 2), rem);
 }
 
 // Positioning from top left
@@ -28,25 +28,11 @@
   left: @left;
 }
 
-// Setting font size like a boss
-.ffont-size(@sizeValue) {
-  //@pxValue: (@sizeValue * 16);
-  //@remValue: @sizeValue;
-  //font-size: ~"@{pxValue}px";
-  //font-size: ~"@{remValue}rem";
-}
-
 .font-size(@value) when (isnumber(@value)) {
   font-size: unit(@value * 16, px); font-size: unit(@value, rem);
 }
 
-
 .dont-touch(){
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 

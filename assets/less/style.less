@@ -21,18 +21,16 @@
 }
 
 @fontHelvetica  : "Helvetica Neue", Helvetica, Arial, sans-serif;
-
 @fontSerif      : "Droid Serif", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-
 @fontSans       : "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // GRID SYSTEM
 ///////////////////////////////////////////////
 
-@spacingBig             : 40px;
-@spacingSmall           : 14px;
+@spacingBig             : 2rem;
+@spacingSmall           : 1rem;
 
-@width                  : 960px;
+@width                  : 60rem;
 
 // Fonts
 ///////////////////////////////////////////////
@@ -80,10 +78,7 @@ li {
 }
 
 .load * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+  transition: none !important;
 }
 
 html, body {
@@ -103,7 +98,7 @@ h1 {
   .size(100%, 3);
   .font-size(@fontExtraLarge);
   
-  margin-top: 40%;
+  margin-top: 6rem;
   margin-bottom: @spacingBig + @spacingSmall;
 
   text-align: right;
@@ -117,7 +112,6 @@ span {
 
 svg {
   width: 50%;
-  margin-top: 100px;
   margin-bottom: @spacingBig;
   
   position: absolute;
@@ -126,7 +120,7 @@ svg {
 
 article {
   .size(50%,100%);
-  
+
   position: absolute;
   left: 0;
 }
@@ -193,10 +187,10 @@ footer {
 }
 
 .blueprint {
-  .size(@width,100%);
-  .align-horizontally();
+  .size(@width,34rem);
+  .align-center(@width,34rem);
 
-  position: relative;
+  //position: relative;
 }
 
 .iphone {
@@ -205,7 +199,6 @@ footer {
   stroke-dasharray: 3000;
   stroke-dashoffset: 0;
 
-  -webkit-animation: dash 2s ease-in alternate;
   animation: dash 2s ease-in alternate;
 }
 
@@ -213,8 +206,8 @@ footer {
   position: absolute;
   top: 0;
   right: 0;
-  margin-top: 179px;
-  margin-right: 133px;
+  margin-top: 4.9rem;
+  margin-right: 8.3rem;
 
   opacity: 0;
   width: 212px;
@@ -222,9 +215,7 @@ footer {
 
   background-image: url("../img/screen.png");
 
-  -webkit-animation: invisible 1s ease-out 1 1.3s forwards;
   animation: invisible 1s ease-out 1 1.3s forwards;
-
 }
 
 .download {
@@ -236,10 +227,7 @@ footer {
   opacity: 0;
   background-color: @white;
   border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -webkit-border-radius: 1rem;
   
-  -webkit-animation: download 1s ease-out 1 2s forwards;
   animation: download 1s ease-out 1 2s forwards;
   
   &:hover {
@@ -262,18 +250,12 @@ footer {
 
 .author {
   .font-size(@fontDefault);
-
+  
   opacity: 0;
 
-  -webkit-animation: author 1s ease-in-out 1 2.5s forwards;
   animation: author 1s ease-in-out 1 2.5s forwards;
 
   a { border-bottom: 1px rgba(255,255,255,0.3) solid; }
-}
-
-@-webkit-keyframes dash {
-  from {  stroke-dashoffset: 3000;}
-  to {    stroke-dashoffset: 0;}
 }
 
 @keyframes dash {
@@ -281,25 +263,9 @@ footer {
   to {    stroke-dashoffset: 0;}
 }
 
-@-webkit-keyframes invisible {
-  from {  opacity: 0;}
-  to {    opacity: 1;}
-}
-
 @keyframes invisible {
   from {  opacity: 0;}
   to {    opacity: 1;}
-}
-
-@-webkit-keyframes author {
-  from {
-    opacity: 0;
-    margin-top: 12rem;
-  }
-  to {
-    opacity: 1;
-    margin-top: 10rem;
-   }
 }
 
 @keyframes author {
@@ -310,17 +276,6 @@ footer {
   to {
     opacity: 1;
     margin-top: 10rem;
-   }
-}
-
-@-webkit-keyframes download {
-  from {
-    opacity: 0;
-    margin-top: 30px;
-  }
-  to {
-    opacity: 1;
-    margin-top: 0;
    }
 }
 
