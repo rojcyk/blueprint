@@ -1,2 +1,2 @@
-ios-bootstrap
-=============
+template-web
+============
