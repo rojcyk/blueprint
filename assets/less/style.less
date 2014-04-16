@@ -289,3 +289,66 @@ footer {
     margin-top: 0;
    }
 }
+
+//iPhone 5
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+{
+
+article {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.download,
+.screen,
+svg {
+  display: none;
+}
+
+.blueprint {
+  width: 100%;
+  display: relative;
+  
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.author {
+  animation: author 1s ease-in-out 1 0.4s forwards;
+}
+}
+
+//iPhone 4
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait)
+{
+  
+  article {
+    width: 100%;
+    padding-right: 30px;
+  }
+  
+  .download,
+  .screen,
+  svg {
+    display: none;
+  }
+  
+  .blueprint {
+    width: 100%;
+    display: relative;
+    
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+  
+  .author {
+    animation: author 1s ease-in-out 1 0.4s forwards;
+  }
+}
