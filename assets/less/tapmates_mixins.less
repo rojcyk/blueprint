@@ -28,6 +28,12 @@
   left: @left;
 }
 
+.xpos(@bottom, @right) {
+  position: absolute;
+  bottom: @bottom;
+  right: @right;
+}
+
 .font-size(@value) when (isnumber(@value)) {
   font-size: unit(@value * 16, px); font-size: unit(@value, rem);
 }
