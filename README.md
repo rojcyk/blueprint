@@ -13,3 +13,5 @@ Blueprint has only the stuff necessary for developing iOS apps. Portrait and lan
 ## 120% pixel perfect
 
 All the pixels are aligned as they are in iOS 7.1.
+
+[![ ](https://cruel-carlota.pagodabox.com/0a158d2979ac8f4bf92b6e9e45b12dbb "githalytics.com")](http://githalytics.com/rojcyk/blueprint)
