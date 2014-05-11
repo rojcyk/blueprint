@@ -1,0 +1,93 @@
+// Mixins
+// ==================================================
+
+// Aligning like a boss
+.align-vertically(@height) {
+  position: absolute;
+  top: 50%;
+  margin-top: -(@height / 2);
+}
+
+.align-horizontally() {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-center(@width, @height) {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  margin-top: unit(-(@height / 2), rem);
+  margin-left: unit(-(@width / 2), rem);
+}
+
+// Positioning from top left
+.pos(@top, @left) {
+  position: absolute;
+  top: @top;
+  left: @left;
+}
+
+.xpos(@bottom, @right) {
+  position: absolute;
+  bottom: @bottom;
+  right: @right;
+}
+
+.font-size(@value) when (isnumber(@value)) {
+  font-size: unit(@value * 16, px); font-size: unit(@value, rem);
+}
+
+.dont-touch(){
+  user-select: none;
+}
+
+
+// Mixin for debuging purposes
+.debug() {
+  background-color: rgba(255,0,0,.1);
+}
+ 
+// For clearing floats like a boss
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+ 
+// Sizing shortcuts
+.size(@width: auto, @height: auto,) {
+  width: @width;
+  height: @height;
+}
+
+.square(@size) {
+  .size(@size, @size);
+}
+ 
+// CSS image replacement
+// https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+.hide-text() {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+// Making gradients as simple as a mixin
+.background-gradient(@startColor: black, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background:   -webkit-linear-gradient(top, @startColor, @endColor);
+	background:      -moz-linear-gradient(top, @startColor, @endColor);
+	background:       -ms-linear-gradient(top, @startColor, @endColor);
+	background:        -o-linear-gradient(top, @startColor, @endColor);
+}

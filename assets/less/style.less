@@ -1,0 +1,295 @@
+@import 'tapmates_mixins.less';
+@import 'svg.less';
+
+// FONT SETTINGS
+///////////////////////////////////////////////
+
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+@fontHelvetica  : "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontSerif      : "Droid Serif", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+@fontSans       : "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// GRID SYSTEM
+///////////////////////////////////////////////
+
+@spacingBig             : 3rem;
+@spacingSmall           : 1rem;
+
+@width                  : 60rem;
+
+// Fonts
+///////////////////////////////////////////////
+
+@fontSize               : 62.5%;
+
+@fontDefault            : 1;
+@fontLarge              : 1.4;
+@fontExtraLarge         : 2.7;
+
+@fontLight              : 300;
+@fontRegular            : 400;
+@fontBold               : 600;
+
+@fontLineSmall          : 100%;
+@fontLineDefault        : 135%;
+@fontLineMedium         : 176%;
+@fontLineBig            : 190%;
+
+// COLORS
+///////////////////////////////////////////////
+
+@white                  : #fefefe;
+@black                  : #2c2c2c;
+@blue                   : #4e5bff;
+@orange                 : #ff8800;
+
+*, *:before, *:after {box-sizing: border-box;}
+
+html,
+body,
+div,
+section,
+header,
+footer,
+code,
+h1, h2, h3, h4, h5, h6,
+span,
+p,
+nav,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+.load * {
+  transition: none !important;
+}
+
+// ANIMATIONS
+///////////////////////////////////////////////
+
+.screen { animation: invisible 1s ease-out 1 1.3s forwards; }
+.download { animation: slideIn 1s ease-out 1 2s forwards; }
+.iphone { animation: dash 2s ease-in alternate forwards; }
+.more { animation: slideIn 1s ease-in 1 2.5s forwards; }
+
+html, body {
+  .size(100%,100%);
+}
+
+body {
+  font-size: @fontSize;
+  font-family: @fontSerif;
+  font-weight: @fontRegular;
+  color: white;
+  background-color: @blue;
+}
+
+section {
+  .size(100%,100%);
+}
+
+article {
+  .size(@width,40rem);
+  .align-center(@width,40rem);
+}
+
+h1 {
+  .size(100%, 3);
+  .font-size(@fontExtraLarge);
+
+  margin-top: 8rem;
+  margin-bottom: @spacingBig;
+
+  text-align: right;
+  font-weight: @fontRegular;
+  font-family: @fontSans;
+  
+  span {
+    color: rgba(255,255,255,0.3);
+    font-family: @fontSerif;
+  }
+  
+  br {
+    display: none;
+  }
+}
+
+p {
+  .font-size(1.4);
+
+  line-height: @fontLineMedium;
+  text-align: right;
+
+  color: rgba(255,255,255,0.7);
+
+  a, i, b {color: rgba(255,255,255,1);}
+
+  i {
+    font-family: @fontSans;
+    font-weight: @fontLight;
+  }
+
+  b {
+    font-family: @fontSans;
+    font-weight: @fontRegular;
+  }
+
+  a {
+    font-style: italic;
+    text-decoration: none;
+
+    border-bottom: 2px white solid;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+.more {
+  .font-size(@fontDefault);
+  font-family: @fontSerif;
+  
+  opacity: 0;
+  
+  a { border-bottom: 1px rgba(255,255,255,0.3) solid; }
+}
+
+.download {
+  .size(50%, 4rem);
+  
+  //margin-left: @width / 4;
+  //position: relative;
+  
+  margin-top: @spacingBig + @spacingSmall;
+  margin-left: 50%;
+  right: 0;
+
+  opacity: 0;
+  background-color: @white;
+  border-radius: 1rem;
+
+  font-family: @fontSans;
+
+  &:hover {
+  }
+
+  a {
+    .square(100%);
+    .font-size(@fontDefault);
+
+    display: block;
+
+    color: @blue;
+
+    font-weight: @fontBold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 4rem;
+  }
+}
+
+.blueprint {
+  text-align: right;
+}
+
+.info {
+  .size(@width / 2,100%);
+  
+  position: absolute;
+}
+
+.description {
+  margin-bottom: @spacingBig;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 8.4rem;
+  margin-right: 8.8rem;
+
+  opacity: 0;
+  width: 212px;
+  height:380px;
+
+  background-image: url("../img/screen.png");
+}
+
+.iphone {
+  position: absolute;
+  right: 0;
+  margin-top: 3.5rem;
+  margin-right: 7.5rem;
+
+  fill: none;
+
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 0;
+}
+
+@keyframes dash {
+  from {  stroke-dashoffset: 3000;}
+  to {    stroke-dashoffset: 0;}
+}
+
+@keyframes invisible {
+  from {  opacity: 0;}
+  to {    opacity: 1;}
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    margin-top: @spacingBig + @spacingSmall;
+  }
+  to {
+    opacity: 1;
+    margin-top: @spacingBig;
+   }
+}
+
+@media only screen and (max-width : @width) {
+
+  .download { animation: slideIn 1s ease-out 1 0s forwards; }
+  .more { animation: slideIn 1s ease-in 1 1s forwards; }
+
+  .screen,
+  svg {
+    display: none;
+  }
+  
+  h1 {
+    margin-top: 4rem;
+  
+    br {
+      display: inline;
+    }
+  }
+  
+  .info {
+    width: 100%;
+  }
+  
+  article {
+    .pos(0,0);
+    margin: 0;
+    width: 94%
+  }
+}
