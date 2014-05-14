@@ -184,13 +184,13 @@ section {
       height: 10rem;
       
       header {
-        padding-top: 2rem;
+        padding-top: 1.6rem;
         text-align: left;
         float: right;
       }
       
       p {
-        .font-size(1.15);
+        .font-size(1);
       }
     }
   }
@@ -249,7 +249,7 @@ h1 {
 }
 
 p {
-  .size(100%, auto);
+  .size(80%, auto);
   .font-size(1);
   
   display: inline-block;
@@ -374,14 +374,14 @@ p {
       
       h1 {
         opacity: 1;
+        
+        span {
+          display: none;
+        }
       }
       
       p {
         opacity: 1;
-      }
-      
-      span {
-        display: none;
       }
       
       article {
@@ -394,13 +394,13 @@ p {
     }
     
     &:nth-of-type(2) {
-      padding-top: 1rem;
+      padding-top: 1.6rem;
       
       article {
         height: auto;
         
         P {
-          .font-size(1.4)
+          //.font-size(1.4)
         }
         
         header {
@@ -410,13 +410,13 @@ p {
     } 
      
     &:nth-of-type(3) {
-      padding-top: 4rem;
+      padding-top: 3rem;
       
       article {
         height: auto;
         
         P {
-          .font-size(1.4)
+          //.font-size(1.4)
         }
         
         header {
@@ -427,7 +427,7 @@ p {
   }
   
   article {
-    width: 100%;
+    min-width: 100%;
   }
   
   header {
