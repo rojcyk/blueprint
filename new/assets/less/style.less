@@ -292,29 +292,28 @@ section {
 
   &:nth-of-type(7) {
     background-color: rgb(30, 30, 30);
-  }
 
-  ul {
-    .align-horizontally();
-    width: 25rem;
-  }
+    ul {
+      .align-horizontally();
+      width: 25rem;
+    }
 
-  li {
-    .font-size(0.8);
-    display: inline-block;
-    margin-right: 2rem;
+    li {
+      .font-size(0.8);
+      display: inline-block;
+      margin-right: 2rem;
 
-    &:last-of-type {
-      margin-right: 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: white;
+          text-decoration: none;
+          border-bottom: 1px solid RGB(64, 64, 64);
     }
   }
-
-  a {
-    color: white;
-        text-decoration: none;
-        border-bottom: 1px solid RGB(64, 64, 64);
-  }
-
 }
 
 article {
@@ -381,6 +380,7 @@ p {
     padding: 0;
     padding-left: 1rem;
     margin-bottom: @spacingSmall;
+    text-align: center;
   }
 
   button {
