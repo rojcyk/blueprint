@@ -505,12 +505,28 @@ p {
   background-repeat: no-repeat;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width : 44rem) {
+
+  .mobile {
+    display: inline;
+
+    a {
+      color: white;
+    }
+  }
 
   .button,
   .image,
   .icon,
   .screenshot {
+    display: none;
+  }
+
+  .share {
     display: none;
   }
 
@@ -571,6 +587,32 @@ p {
           padding-top: 1rem;
           text-align: left;
         }
+      }
+    }
+
+    &:nth-of-type(5) {
+      display: none;
+    }
+
+    &:nth-of-type(6) {
+
+      p, form, input, button { width: 100%}
+
+      p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    &:nth-of-type(7) {
+      ul {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      li {
+        margin-bottom: 1rem;
       }
     }
   }
