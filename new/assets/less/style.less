@@ -124,6 +124,37 @@ section {
   }
 
   &:nth-of-type(2) {
+    height: 4rem;
+    padding: 0;
+    overflow: hidden;
+
+    text-align: center;
+
+    a {
+      .size(100%,auto);
+      .font-size(0.8rem);
+
+      display: inline-block;
+
+      font-family: @fontSans;
+      color: rgba(255, 255, 255, 0.2);
+      vertical-align: middle;
+      line-height: 4rem;
+      text-decoration: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    p {
+      width: @width / 2;
+      text-align: justify;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  &:nth-of-type(3) {
     background: rgba(255, 255, 255, 0.04);
 
     article {
@@ -143,7 +174,7 @@ section {
     }
   }
 
-  &:nth-of-type(3) {
+  &:nth-of-type(4) {
     padding-bottom: 0;
     background: rgba(255, 255, 255, 0.08);
 
@@ -158,7 +189,7 @@ section {
     }
   }
 
-  &:nth-of-type(4) {
+  &:nth-of-type(5) {
     text-align: center;
     background: rgba(255, 255, 255, 0.12);
 
@@ -200,12 +231,7 @@ section {
     }
   }
 
-  &:nth-of-type(5) {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.15);
-  }
-
-  &:nth-of-type(5) {
+  &:nth-of-type(6) {
     text-align: center;
     background-color: rgb(49, 49, 49);
     padding-bottom: 1.5rem;
@@ -217,7 +243,7 @@ section {
     }
   }
 
-  &:nth-of-type(6) {
+  &:nth-of-type(7) {
     text-align: center;
     background-color: rgb(41, 41, 41);
 
@@ -237,7 +263,7 @@ section {
     }
   }
 
-  &:nth-of-type(7) {
+  &:nth-of-type(8) {
     background-color: rgb(30, 30, 30);
 
     ul {
@@ -268,7 +294,7 @@ section {
     }
   }
 
-  &:nth-of-type(8) {
+  &:nth-of-type(9) {
     padding-top: @spacingSmall;
     padding-bottom: @spacingSmall;
 
@@ -527,6 +553,10 @@ p {
     }
 
     &:nth-of-type(2) {
+      height: 100px;
+    }
+
+    &:nth-of-type(3) {
       padding-top: 0;
       padding-bottom: 0;
 
@@ -543,7 +573,7 @@ p {
       }
     }
 
-    &:nth-of-type(3) {
+    &:nth-of-type(4) {
       padding-top: 3rem;
 
       article {
@@ -574,7 +604,7 @@ p {
       }
     }
 
-    &:nth-of-type(7) {
+    &:nth-of-type(6) {
       ul {
         width: 100%;
         padding-left: 1rem;
@@ -586,7 +616,7 @@ p {
       }
     }
 
-    &:nth-of-type(8) {
+    &:nth-of-type(7) {
       p  {
         padding-left: 1rem;
         padding-right: 1rem;

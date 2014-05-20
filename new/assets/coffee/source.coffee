@@ -3,6 +3,18 @@ $ ->
   @view     = $(".view")
   @p        = $(".fadeIn")
   @share    = $(".share")
+  @more     = $("#more")
+
+
+  @more.on click: =>
+    event.preventDefault()
+    TweenLite.to(".more", 0.4,
+      height: "40rem"
+      ease: Power4.easeIn)
+
+    TweenLite.to(@more, 0.4,
+      fontSize: "0.8rem";
+      ease: Power4.easeIn)
 
   runDrawing = =>
     TweenLite.to(@iphone, 1.2,
