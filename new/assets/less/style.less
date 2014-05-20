@@ -35,26 +35,19 @@
 @fontSize               : 62.5%;
 
 @fontDefault            : 1;
-@fontLarge              : 1.4;
 @fontExtraLarge         : 2.7;
 
 @fontLight              : 300;
 @fontRegular            : 400;
 @fontBold               : 600;
 
-@fontLineSmall          : 100%;
-@fontLineDefault        : 135%;
 @fontLineMedium         : 176%;
-@fontLineBig            : 190%;
 
 // COLORS
 ///////////////////////////////////////////////
 
-@white                  : #fefefe;
-@black                  : #2c2c2c;
 @blue                   : #4e5bff;
 @blueLight              : #828BFF;
-@orange                 : #ff8800;
 
 *, *:before, *:after {box-sizing: border-box;}
 
@@ -75,59 +68,6 @@ li {
   margin: 0;
 }
 
-.load * {
-  transition: none !important;
-}
-
-
-// NAV
-///////////////////////////////////////////////
-
-nav {
-
-  display: none;
-
-  @nav-height       : 3.2rem;
-  @nav-background   : #475AE0;
-  @nav-color        : white;
-
-  .size(100%,@nav-height);
-  .font-size(@fontDefault);
-
-  font-family: @fontSans;
-  background-color: @nav-background;
-
-  ul,li,a { display: inline-block; }
-
-  a {
-    width: 100%;
-    padding-left: @spacingSmall;
-    padding-right: @spacingSmall;
-
-    opacity: 0.5;
-
-    color: @nav-color;
-    line-height: @nav-height;
-    text-decoration: none;
-    text-align: center;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  ul {
-    .size(auto,100%);
-    list-style-type: none;
-  }
-
-  li {
-    .size(auto,100%);
-    min-width: 6rem;
-    vertical-align:middle;
-  }
-}
-
 // GLOBAL DEFS
 ///////////////////////////////////////////////
 
@@ -136,20 +76,22 @@ html, body {
 }
 
 body {
-  font-size:    @fontSize;
-  font-family:  @fontSerif;
-  font-weight:  @fontRegular;
-  color:        @blueLight;
-  background-color: @blue;
+  font-size         :  @fontSize;
+  font-family       :  @fontSerif;
+  font-weight       :  @fontRegular;
+  color             :  @blueLight;
+  background-color  :  @blue;
 }
 
 section {
   .size(100%, auto);
+
   padding-top: @spacingBig + @spacingSmall;
   padding-bottom: @spacingBig + @spacingSmall;
 
   h2 {
     .font-size(1.6);
+
     color: white;
     font-family: @fontSans;
     font-weight: normal;
@@ -159,15 +101,15 @@ section {
 
     article {
       height: 36rem;
+    }
 
-      header {
-        padding-top: 7rem;
-        text-align: right;
-      }
+    header {
+      padding-top: 7rem;
+      text-align: right;
+    }
 
-      p {
-        .font-size(1.3);
-      }
+    p {
+      .font-size(1.3);
 
       a {
         color: white;
@@ -182,7 +124,6 @@ section {
   }
 
   &:nth-of-type(2) {
-    //background-color: #5D69FF;
     background: rgba(255, 255, 255, 0.04);
 
     article {
@@ -192,6 +133,7 @@ section {
 
     header {
       padding-top: 0.9rem;
+
       text-align: left;
       float: right;
     }
@@ -202,24 +144,22 @@ section {
   }
 
   &:nth-of-type(3) {
-    //background-color: #6773FF;
-    background: rgba(255, 255, 255, 0.08);
     padding-bottom: 0;
+    background: rgba(255, 255, 255, 0.08);
 
     article {
       height: 20rem;
       color: #C8CEFD;
+    }
 
-      header {
-        padding-top: 6rem;
-        text-align: right;
-      }
+    header {
+      padding-top: 6rem;
+      text-align: right;
     }
   }
 
   &:nth-of-type(4) {
     text-align: center;
-    //background-color: #7080F8;
     background: rgba(255, 255, 255, 0.12);
 
     article {
@@ -262,7 +202,6 @@ section {
 
   &:nth-of-type(5) {
     text-align: center;
-    //background-color: #7988F8;
     background: rgba(255, 255, 255, 0.15);
   }
 
@@ -283,20 +222,18 @@ section {
     background-color: rgb(41, 41, 41);
 
     h2 {
-      //font-family: @fontSerif;
       margin-bottom: @spacingSmall;
-
     }
 
     p {
       width: @width / 2;
       color: rgb(121, 121, 121);
+    }
 
-      a {
-        color: white;
-        text-decoration: none;
-        border-bottom: 1px solid RGB(64, 64, 64);
-      }
+    a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid RGB(64, 64, 64);
     }
   }
 
@@ -305,11 +242,13 @@ section {
 
     ul {
       .align-horizontally();
+
       width: 25rem;
     }
 
     li {
       .font-size(0.8);
+
       display: inline-block;
       margin-right: 2rem;
 
@@ -320,17 +259,30 @@ section {
 
     a {
       color: white;
-          text-decoration: none;
-          border-bottom: 1px solid RGB(64, 64, 64);
+      text-decoration: none;
+      border-bottom: 1px solid RGB(64, 64, 64);
 
-        &:hover {
-          border-bottom: 1px solid white;
-        }
+      &:hover {
+        border-bottom: 1px solid white;
+      }
     }
   }
 
   &:nth-of-type(8) {
-    background-color: rgb(22, 22, 22);
+    padding-top: @spacingSmall;
+    padding-bottom: @spacingSmall;
+
+    background-color: rgb(26, 26, 26);
+
+    &:hover {
+      p {
+        color: rgb(121, 121, 121);
+      }
+
+      strong {
+        color: white;
+      }
+    }
 
     p {
       color: rgb(42, 42, 42);
@@ -341,9 +293,6 @@ section {
       padding: 0;
       margin: 0;
     }
-
-    padding-top: @spacingSmall;
-    padding-bottom: @spacingSmall;
   }
 }
 
@@ -368,11 +317,10 @@ h1 {
   margin-bottom: @spacingSmall;
   padding-top: 2rem;
 
+  opacity: 0;
   font-weight: @fontRegular;
   font-family: @fontSans;
   color: white;
-
-  opacity: 0;
 
   span {
     .font-size(1.8);
@@ -388,6 +336,7 @@ p {
   display: inline-block;
   margin-bottom: @spacingBig;
   padding-top: 1rem;
+
   line-height: @fontLineMedium;
 
   span {
@@ -395,37 +344,6 @@ p {
     font-family: @fontSans;
   }
 }
-
-.signup {
-  .size(@width / 2, auto);
-  .align-horizontally();
-
-  input {
-    .font-size(1.1);
-    background-color: rgb(49, 49, 49);
-    color: white;
-    width: 100%;
-    line-height: 3rem;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    padding-left: 1rem;
-    margin-bottom: @spacingSmall;
-    text-align: center;
-  }
-
-  button {
-    .font-size(1.1);
-    display: block;
-    color: white;
-    width: 100%;
-    line-height: 3rem;
-    background-color: RGB(39, 145, 62);
-    margin: 0;
-    border: 0
-  }
-}
-
 
 // OTHER
 ///////////////////////////////////////////////
@@ -435,25 +353,53 @@ p {
 }
 
 .share {
-  //width: 16.34rem;
   display: inline-block;
   text-align: center;
   opacity: 0;
 }
 
-.twitter-share-button {
-  width: auto;
-  padding: 0;
+.signup {
+  .size(@width / 2, auto);
+  .align-horizontally();
+
+  input {
+    .font-size(1.1);
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 1rem;
+    margin-bottom: @spacingSmall;
+
+    text-align: center;
+    line-height: 3rem;
+    border: 0;
+    color: white;
+    background-color: rgb(49, 49, 49);
+  }
+
+  button {
+    .font-size(1.1);
+
+    display: block;
+    width: 100%;
+    margin: 0;
+    border: 0;
+
+    line-height: 3rem;
+    color: white;
+    background-color: RGB(39, 145, 62);
+  }
 }
 
 .button {
   .font-size(1.1);
 
   display: inline-block;
+  width: 16.32rem;
+  height: 3.63rem;
   padding-top: 1.2rem;
   padding-left: 60px;
-  width: 16.34rem;
-  height: 3.63rem;
   margin-bottom: @spacingBig;
 
   font-family: @fontSans;
@@ -477,16 +423,13 @@ p {
 }
 
 .iphone {
-  padding: 4rem;
   position: absolute;
-
   width: 100%;
   height: 100%;
-
-  opacity: 0.2;
-
+  padding: 4rem;
   top: 0;
 
+  opacity: 0.2;
   fill: none;
   stroke: white;
   stroke-dasharray: 3000;
@@ -496,17 +439,12 @@ p {
 .view {
   .align-horizontally();
 
-  position: relative;
-  //top: 0;
-  //right: 0;
-  margin-top: 8.15rem;
-  //margin-right: 31.1%;
-
   width: 11.25rem;
   height:20rem;
+  position: relative;
+  margin-top: 8.15rem;
 
   opacity: 0;
-
   background-size: 11.25rem 20rem;
   background-image: url('../img/screen.png');
 }
@@ -589,7 +527,8 @@ p {
     }
 
     &:nth-of-type(2) {
-      padding-top: 1.6rem;
+      padding-top: 0;
+      padding-bottom: 0;
 
       article {
         height: auto;
@@ -644,6 +583,13 @@ p {
 
       li {
         margin-bottom: 1rem;
+      }
+    }
+
+    &:nth-of-type(8) {
+      p  {
+        padding-left: 1rem;
+        padding-right: 1rem;
       }
     }
   }
