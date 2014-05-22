@@ -380,8 +380,16 @@ p {
 
 .share {
   display: inline-block;
+  position: relative;
   text-align: center;
+  vertical-align: center;
   opacity: 0;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+
+.dropbox-saver {
+  margin-bottom: 1rem;
 }
 
 .signup {
@@ -419,26 +427,37 @@ p {
 }
 
 .button {
-  .font-size(1.1);
+  .font-size(1);
 
   display: inline-block;
-  width: 16.32rem;
-  height: 3.63rem;
-  padding-top: 1.2rem;
-  padding-left: 60px;
-  margin-bottom: @spacingBig;
+  width:   222px;
+  height:  58px;
+  padding-left:60px;
 
-  font-family: @fontSans;
-  text-align: left;
+  font-family : @fontSans;
   text-decoration: none;
-  line-height: 100%;
+  text-align: left;
+  line-height: 55px;
+  vertical-align: middle;
 
+  background-repeat: none;
+  margin-bottom: 1rem;
+}
+
+.github {
   color: #797979;
-  background-image: @button;
+  background-image:  @button-github;
 
-  strong {
-    color:white;
-  }
+  strong,
+  &:hover { color:white; }
+}
+
+.dropbox {
+  color: #797979;
+  background-image:  @button-dropbox;
+
+  strong,
+  &:hover { color:#0083E4; }
 }
 
 .image {
