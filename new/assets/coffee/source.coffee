@@ -4,16 +4,12 @@ $ ->
   @p        = $(".fadeIn")
   @share    = $(".share")
   @more     = $("#more")
+  @dropbox  = $("#dropbox")
 
-  options = {
-    files: [
-        {'url': 'http://codeload.github.com/rojcyk/blueprint/zip/master', 'filename': 'Blueprint'},
-    ],
-};
-
-  @more.on click: =>
-    button = Dropbox.save(options);
-    document.getElementById("dropbox").appendChild(button);
+  @dropbox.on click: =>
+    event.preventDefault()
+    button = Dropbox.save("http://codeload.github.com/rojcyk/blueprint/zip/master", "Blueprint")
+    @dropbox.appendChild(button)
 
   @more.on click: =>
     event.preventDefault()

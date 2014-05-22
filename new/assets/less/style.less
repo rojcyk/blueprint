@@ -232,9 +232,10 @@ section {
   }
 
   &:nth-of-type(6) {
-    text-align: center;
-    background-color: rgb(49, 49, 49);
     padding-bottom: 1.5rem;
+
+    text-align: center;
+    background-color: rgb(255, 255, 255);
 
     h2 {
       .font-size(1.2);
@@ -428,36 +429,38 @@ p {
 
 .button {
   .font-size(1);
-
   display: inline-block;
   width:   222px;
   height:  58px;
-  padding-left:60px;
+  padding-left:70px;
 
-  font-family : @fontSans;
-  text-decoration: none;
-  text-align: left;
   line-height: 55px;
+  font-family : @fontSans;
+  text-align: left;
+  text-decoration: none;
   vertical-align: middle;
 
   background-repeat: none;
-  margin-bottom: 1rem;
-}
-
-.github {
-  color: #797979;
-  background-image:  @button-github;
-
-  strong,
-  &:hover { color:white; }
 }
 
 .dropbox {
   color: #797979;
-  background-image:  @button-dropbox;
+  background-image:  @dropbox;
+  margin-bottom: @spacingBig;
+  border: 2px solid #1685E2;
+  border-radius: 8px;
 
   strong,
   &:hover { color:#0083E4; }
+}
+
+.github {
+  color: #797979;
+  background-image:  @github;
+  padding-left: 60px;
+
+  strong,
+  &:hover { color:white; }
 }
 
 .image {
