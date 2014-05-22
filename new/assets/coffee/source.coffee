@@ -9,7 +9,7 @@ $ ->
   @dropbox.on click: =>
     event.preventDefault()
     test = document.getElementById("save")
-    button = Dropbox.save("http://codeload.github.com/rojcyk/blueprint/zip/master","Blueprint.zip");
+    button = Dropbox.save("https://dl.dropboxusercontent.com/u/5593269/1524715_580024018717368_1237361240_n.jpg","Blueprint.zip");
     #alert button
     #test.appendChild(button)
 
