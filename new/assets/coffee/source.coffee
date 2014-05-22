@@ -8,8 +8,10 @@ $ ->
 
   @dropbox.on click: =>
     event.preventDefault()
+    test = document.getElementById("save")
     button = Dropbox.save("http://codeload.github.com/rojcyk/blueprint/zip/master","Blueprint.zip");
-    document.getElementById("dropbox").appendChild(button);
+    #alert button
+    #test.appendChild(button)
 
   @more.on click: =>
     event.preventDefault()
