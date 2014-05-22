@@ -8,7 +8,7 @@ $ ->
 
   @dropbox.on click: =>
     event.preventDefault()
-    button = Dropbox.save("http://codeload.github.com/rojcyk/blueprint/zip/master", "Blueprint.zip");
+    button = Dropbox.save("http://codeload.github.com/rojcyk/blueprint/zip/master","Blueprint.zip");
     @dropbox.appendChild(button);
 
   @more.on click: =>
