@@ -5,14 +5,15 @@ $ ->
   @share    = $(".share")
   @more     = $("#more")
 
-  var options = {
+  options = {
     files: [
         {'url': 'http://codeload.github.com/rojcyk/blueprint/zip/master', 'filename': 'Blueprint'},
     ],
 };
 
-  var button = Dropbox.save(options);
-  document.getElementById("dropbox").appendChild(button);
+  @more.on click: =>
+    button = Dropbox.save(options);
+    document.getElementById("dropbox").appendChild(button);
 
   @more.on click: =>
     event.preventDefault()
