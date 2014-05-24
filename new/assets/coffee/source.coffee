@@ -6,6 +6,9 @@ $ ->
   @more     = $("#more")
   @dropbox  = $("#dropbox")
 
+  $("#github").on click: =>
+    ga('send', 'event', 'GitHub', 'click', 'Download count')
+
   @dropbox.on click: =>
     event.preventDefault()
     ga('send', 'event', 'Dropbox', 'click', 'Download count')
