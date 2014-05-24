@@ -8,6 +8,7 @@ $ ->
 
   @dropbox.on click: =>
     event.preventDefault()
+    ga('send', 'event', 'Dropbox', 'click', 'Download count')
     button = Dropbox.save("https://dl.dropboxusercontent.com/u/5593269/1524715_580024018717368_1237361240_n.jpg","phoyo.jpg")
 
   @more.on click: =>
