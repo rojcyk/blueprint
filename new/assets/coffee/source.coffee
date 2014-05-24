@@ -8,7 +8,7 @@ $ ->
   @github   = $("#github")
 
   @github.on click: =>
-    ga('send', 'event', 'GitHub', 'click', 'Download count 2')
+    ga('send', 'event', 'GitHub', 'click', 'Download count')
 
   @dropbox.on click: =>
     event.preventDefault()
