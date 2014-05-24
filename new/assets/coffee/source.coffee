@@ -5,8 +5,9 @@ $ ->
   @share    = $(".share")
   @more     = $("#more")
   @dropbox  = $("#dropbox")
+  @github   = $("#github")
 
-  $("#github").on click: =>
+  @github.on click: =>
     ga('send', 'event', 'GitHub', 'click', 'Download count')
 
   @dropbox.on click: =>
