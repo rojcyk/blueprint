@@ -1,0 +1,581 @@
+@font-face {
+  font-family: 'Droid Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Sans'), local('DroidSans'), url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+section,
+header,
+footer,
+code,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+nav,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #4e5bff;
+}
+body {
+  font-size: 62.5%;
+  font-family: "Droid Serif", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+section {
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+section h2 {
+  font-size: 25.6px;
+  font-size: 1.6rem;
+  color: white;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+}
+section:nth-of-type(1) article {
+  height: 36rem;
+}
+section:nth-of-type(1) header {
+  padding-top: 7rem;
+  text-align: right;
+}
+section:nth-of-type(1) p {
+  font-size: 20.8px;
+  font-size: 1.3rem;
+}
+section:nth-of-type(1) p a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+section:nth-of-type(1) p a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+section:nth-of-type(2) {
+  height: 4rem;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+section:nth-of-type(2) .story {
+  border-bottom: none;
+}
+section:nth-of-type(2) p {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  display: block;
+  width: 30rem;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.6);
+}
+section:nth-of-type(2) p:last-of-type {
+  padding-bottom: 3rem;
+}
+section:nth-of-type(2) p a {
+  color: white;
+  text-decoration: none;
+}
+section:nth-of-type(2) a {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+section:nth-of-type(3) {
+  background: rgba(255, 255, 255, 0.04);
+}
+section:nth-of-type(3) article {
+  color: #98A9FC;
+  height: 10rem;
+}
+section:nth-of-type(3) header {
+  padding-top: 0.9rem;
+  text-align: left;
+  float: right;
+}
+section:nth-of-type(3) p {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+section:nth-of-type(4) {
+  padding-bottom: 0;
+  background: rgba(255, 255, 255, 0.08);
+}
+section:nth-of-type(4) article {
+  height: 20rem;
+  color: #C8CEFD;
+}
+section:nth-of-type(4) header {
+  padding-top: 6rem;
+  text-align: right;
+}
+section:nth-of-type(4) p {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+section:nth-of-type(5) {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+}
+section:nth-of-type(5) article {
+  height: auto;
+}
+section:nth-of-type(5) h2 {
+  margin-bottom: 3rem;
+}
+section:nth-of-type(5) ul {
+  width: 100%;
+  height: 100%;
+}
+section:nth-of-type(5) li {
+  color: white;
+  display: block;
+  margin-bottom: 3rem;
+}
+section:nth-of-type(5) li:last-of-type {
+  margin-bottom: 0;
+}
+section:nth-of-type(5) span {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  color: #C8CEFD;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+section:nth-of-type(5) a {
+  color: #C8CEFD;
+  font-style: italic;
+}
+section:nth-of-type(5) a:hover {
+  color: white;
+}
+section:nth-of-type(6) {
+  padding-bottom: 1.5rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+section:nth-of-type(6) h2 {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  color: #797979;
+  margin-bottom: 3rem;
+}
+section:nth-of-type(7) {
+  text-align: center;
+  background-color: #292929;
+}
+section:nth-of-type(7) h2 {
+  margin-bottom: 1rem;
+}
+section:nth-of-type(7) p {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  width: 30rem;
+  color: #797979;
+}
+section:nth-of-type(7) a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #404040;
+}
+section:nth-of-type(8) {
+  background-color: #1e1e1e;
+}
+section:nth-of-type(8) ul {
+  margin-left: auto;
+  margin-right: auto;
+  width: 31rem;
+}
+section:nth-of-type(8) li {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-right: 2rem;
+}
+section:nth-of-type(8) li:last-of-type {
+  margin-right: 0;
+}
+section:nth-of-type(8) a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #404040;
+}
+section:nth-of-type(8) a:hover {
+  border-bottom: 1px solid white;
+}
+section:nth-of-type(9) {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #1a1a1a;
+}
+section:nth-of-type(9):hover p {
+  color: #797979;
+}
+section:nth-of-type(9):hover strong {
+  color: white;
+}
+section:nth-of-type(9) p {
+  color: #2a2a2a;
+  font-size: 14.4px;
+  font-size: 0.9rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+article {
+  *zoom: 1;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  max-width: 60rem;
+  min-width: 40rem;
+}
+article:before,
+article:after {
+  display: table;
+  content: "";
+}
+article:after {
+  clear: both;
+}
+header {
+  width: 50%;
+  height: 100%;
+}
+h1 {
+  width: 100;
+  height: auto;
+  font-size: 43.2px;
+  font-size: 2.7rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  opacity: 0;
+  font-weight: 400;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: white;
+}
+h1 span {
+  font-size: 28.8px;
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Droid Serif", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+p {
+  width: 80%;
+  height: auto;
+  font-size: 16px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+  line-height: 176%;
+}
+p span {
+  color: white;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.fadeIn {
+  opacity: 0;
+}
+.share {
+  right: -1rem;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  opacity: 0;
+  line-height: 2rem;
+  padding-top: 1rem;
+}
+.dropbox-saver {
+  margin-bottom: 1rem;
+}
+.story {
+  width: 100%;
+  height: auto;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  display: inline-block;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: rgba(255, 255, 255, 0.2);
+  vertical-align: middle;
+  line-height: 4rem;
+  text-decoration: underline;
+}
+.story:hover {
+  color: white;
+}
+.signup {
+  width: 30rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.signup input {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  height: 3.1rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 0;
+  color: white;
+  background-color: #313131;
+}
+.signup button {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  display: block;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  line-height: 3rem;
+  color: white;
+  background-color: #27913e;
+}
+.button {
+  display: inline-block;
+  width: 222px;
+  height: 58px;
+  padding-left: 70px;
+  line-height: 55px;
+  font-family: "Droid Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: middle;
+  background-repeat: none;
+}
+.dropbox {
+  font-size: 16px;
+  font-size: 1rem;
+  color: #797979;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjAiIHk9IjAiIHdpZHRoPSIyMjIiIGhlaWdodD0iNTgiIHZpZXdCb3g9IjAgMCAyMjIgNTgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxzdHlsZT4uc3R5bGUwe2ZpbGw6CSNGRkZGRkY7fS5zdHlsZTF7ZmlsbDoJIzAwODNFNDt9PC9zdHlsZT48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjIyIiBoZWlnaHQ9IjU4IiByeD0iNyIgY2xhc3M9InN0eWxlMCIvPjxwYXRoIGQ9Ik0yNS40NzIyODEzIDExIEwxNCAxOC40MyBMMjEuOTMyMzk5OCAyNC43NCBMMzMuNSAxNy42NSBMMjUuNDcyMjgxMyAxMSBaIE0xNCAzMS4wNCBMMjUuNDcyMjgxMyAzOC40OCBMMzMuNSAzMS44MyBMMjEuOTMyMzk5OCAyNC43NCBMMTQgMzEuMDQgWiBNMzMuNSAzMS44MyBMNDEuNTI3NzE4NyAzOC40OCBMNTMgMzEuMDQgTDQ1LjA2NzYwMDIgMjQuNzQgTDMzLjUgMzEuODMgWiBNNTMgMTguNDMgTDQxLjUyNzcxODcgMTEgTDMzLjUgMTcuNjUgTDQ1LjA2NzYwMDIgMjQuNzQgTDUzIDE4LjQzIFogTTMzLjUyMzU0OTQgMzMuMjYgTDI1LjQ3MjI4MTMgMzkuODkgTDIyLjAyNjk3MTEgMzcuNjYgTDIyLjAyNjk3MTEgNDAuMTYgTDMzLjUyMzU0OTQgNDcgTDQ1LjAyMDEyNzcgNDAuMTYgTDQ1LjAyMDEyNzcgMzcuNjYgTDQxLjU3NDgxNzQgMzkuODkgTDMzLjUyMzU0OTQgMzMuMjYgWiIgY2xhc3M9InN0eWxlMSIvPjwvc3ZnPg==);
+  margin-bottom: 3rem;
+  border: 2px solid #1685E2;
+  border-radius: 8px;
+}
+.dropbox strong,
+.dropbox:hover {
+  color: #0083E4;
+}
+.github {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+  color: #797979;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjAiIHk9IjAiIHdpZHRoPSIyMjIiIGhlaWdodD0iNTgiIHZpZXdCb3g9IjAgMCAyMjIgNTgiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxkZWZzPjxwb2x5Z29uIGlkPSJwb2x5Y2xpcCIgcG9pbnRzPSItNDIuMTY3LDU4IC0yMzAsNTggLTE5MCwwIC0yLjE2NywwIi8+PC9kZWZzPjxyZWN0IGlkPSJmcmFtZSIgZmlsbD0iI0ZGRkZGRiIgeD0iMCIgeT0iMCIgd2lkdGg9IjIyMiIgaGVpZ2h0PSI1OCIgcng9IjciLz48cmVjdCBpZD0iZnJhbWUiIGZpbGw9IiMyOTI5MjkiIHg9IjIiIHk9IjIiIHdpZHRoPSIyMTgiIGhlaWdodD0iNTQiIHJ4PSI1Ii8+PHBhdGggZD0iTTQ3LjU4NSAyOC44NjUgQzQ3LjU4NSAzOC43NCAzOS42MjMgNDYuNzMgMjkuNzg0IDQ2LjczIEMxOS45NjIgNDYuNzMgMTIgMzguNzQgMTIgMjguODY1IEMxMiAxOS4wMDggMTkuOTYyIDExIDI5Ljc4NCAxMSBDMzkuNjIzIDExIDQ3LjU4NSAxOS4wMDggNDcuNTg1IDI4Ljg2NSBMNDcuNTg1IDI4Ljg2NSBaTTM0LjM0OSA0My4xNTcgQzQwLjYwMiA0MS4xMjEgNDUuMTMxIDM1LjM2MiA0NS4xMzEgMjguNTUgQzQ1LjEzMSAyMC4xNzYgMzguMjU2IDEzLjM4MiAyOS43ODMgMTMuMzgyIEMyMS4zMjggMTMuMzgyIDE0LjQ1NCAyMC4xNzUgMTQuNDU0IDI4LjU1IEMxNC40NTQgMzUuMzYyIDE5LjAwMiA0MS4xMzggMjUuMjcyIDQzLjE1NyBMMjUuMjcyIDQwLjI5NSBDMjAuNzk1IDQxLjI5NiAxOS44NTQgMzguMjIzIDE5Ljg1NCAzOC4yMjMgQzE5LjE0NCAzNi40MTUgMTguMTE0IDM1Ljk0MSAxOC4xMTQgMzUuOTQxIEMxNi42NzQgMzQuOTc2IDE4LjIyMSAzNC45OTMgMTguMjIxIDM0Ljk5MyBDMTkuODAyIDM1LjA5OSAyMC42MzYgMzYuNTkxIDIwLjYzNiAzNi41OTEgQzIyLjEyOCAzOS4xMTkgMjQuNTk3IDM4LjIwNiAyNS4zNjEgMzcuODM3IEMyNS41OTIgMzYuNzMxIDI2LjQ2MyAzNi41MDIgMjYuNzQ3IDM2LjQxNCBDMjIuNzE0IDM1Ljk5MyAxOC4zOTggMzQuNTU0IDE4LjM5OCAyNy42NTQgQzE4LjM5OCAyNS43MjIgMTkuMDkgMjQuMTQzIDIwLjIyNyAyMi45MTMgQzIwLjA1IDIyLjQ1NyAxOS40MjggMjAuNjY2IDIwLjQwNCAxOC4yMjYgQzIwLjQwNCAxOC4yMjYgMjEuOTE0IDE3Ljc1MyAyNS4zMjUgMjAuMDM0IEMyNi43NDYgMTkuNjQ3IDI4LjI3NCAxOS40NTQgMjkuODAyIDE5LjQzNyBDMzEuMzExIDE5LjQ1NSAzMi44MzkgMTkuNjQ4IDM0LjI3OCAyMC4wMzQgQzM3LjY4OSAxNy43NTIgMzkuMTgxIDE4LjIyNiAzOS4xODEgMTguMjI2IEM0MC4xNTcgMjAuNjY2IDM5LjU1MyAyMi40NTcgMzkuMzU4IDIyLjkxMyBDNDAuNTEzIDI0LjE0MyA0MS4yMDUgMjUuNzIyIDQxLjIwNSAyNy42NTQgQzQxLjIwNSAzNC41NTQgMzYuODg5IDM1Ljk3NSAzMi44NTYgMzYuMzk2IEMzMy41ODUgMzYuODkgMzQuMzQ5IDM3LjgyIDM0LjM0OSAzOS41OTMgTDM0LjM0OSA0My4xNTcgTDM0LjM0OSA0My4xNTcgWiIgZmlsbD0iI0ZGRkZGRiIvPjxjbGlwUGF0aCBpZD0iY2xpcHBlciI+PHVzZSB4bGluazpocmVmPSIjcG9seWNsaXAiIHN0eWxlPSJvdmVyZmxvdzp2aXNpYmxlOyIvPjwvY2xpcFBhdGg+PGcgc3R5bGU9Im9wYWNpdHk6MC4yO2NsaXAtcGF0aDp1cmwoI2NsaXBwZXIpOyI+PHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik05LjAwMzEzMjMxIDAgQzQuMDMwODM5NjMgMCAwIDQuMDMyIDAgOC45OTkgTDAgNDkuMDAxIEMwIDUzLjk3MSA0LjAyMSA1OCA5LjAwMyA1OCBMMjUxLjk5Njg2OCA1OCBDMjU2Ljk2OTE2IDU4IDI2MSA1My45NjggMjYxIDQ5LjAwMSBMMjYxIDguOTk5IEMyNjEgNC4wMjkgMjU2Ljk3OSAwIDI1MS45OTcgMCBMOS4wMDMxMzIzMSAwIEw5LjAwMzEzMjMxIDAgWiIvPjwvZz48YW5pbWF0ZVRyYW5zZm9ybSB4bGluazpocmVmPSIjcG9seWNsaXAiIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0idHJhbnNsYXRlIiBmcm9tPSItMTAwMCAwIiB0bz0iMjUwMCAwIiBiZWdpbj0iMHMiIGR1cj0iM3MiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIi8+PC9zdmc+);
+  margin-bottom: 1rem;
+  padding-left: 60px;
+}
+.github strong,
+.github:hover {
+  color: white;
+}
+.image {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.iphone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 4rem;
+  top: 0;
+  opacity: 0.2;
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+}
+.view {
+  margin-left: auto;
+  margin-right: auto;
+  width: 11.25rem;
+  height: 20rem;
+  position: relative;
+  margin-top: 8.15rem;
+  opacity: 0;
+  background-size: 11.25rem 20rem;
+  background-image: url('../img/screen.png');
+}
+.icon {
+  float: left;
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0ic3ltYm9scyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgMjYwIDI2MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CgogIDxnPgogICAgPHBhdGggZmlsbD0iIzVFNkVGQiIgc3Ryb2tlPSIjQTZBRkZEIiBzdHJva2Utd2lkdGg9IjMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIsMikiIGQ9Ik03OS4xMTAwMTI0LDI1NiBDNTAuMDc2NjM3OSwyNTYgMzMuMzg0NDI1MiwyNTYgMTYuNjkyMjEyNiwyMzkuMzA3Nzg3IEMtOS45NTI2MzEzMmUtMDgsMjIyLjYxNTU3NSAwLDIwNS45MjMzNjIgMCwxNzYuODg5OTg4IEwwLDc5LjExMDAxMjQgQzAsNTAuMDc2NjM3OSAtOS45NTI2MzEzMmUtMDgsMzMuMzg0NDI1MiAxNi42OTIyMTI2LDE2LjY5MjIxMjYgQzMzLjM4NDQyNTIsMCA1MC4wNzY2Mzc5LDAgNzkuMTEwMDEyNCwwIEwxNzYuODg5OTg4LDAgQzIwNS45MjMzNjIsMCAyMjIuNjE1NTc1LDAgMjM5LjMwNzc4NywxNi42OTIyMTI2IEMyNTYsMzMuMzg0NDI1MiAyNTYsNTAuMDc2NjM3OSAyNTYsNzkuMTEwMDEyNCBMMjU2LDE3Ni44ODk5ODggQzI1NiwyMDUuOTIzMzYyIDI1NiwyMjIuNjE1NTc1IDIzOS4zMDc3ODcsMjM5LjMwNzc4NyBDMjIyLjYxNTU3NSwyNTYgMjA1LjkyMzM2MiwyNTYgMTc2Ljg4OTk4OCwyNTYgTDc5LjExMDAxMjQsMjU2IEw3OS4xMTAwMTI0LDI1NiBaIj48L3BhdGg+CiAgICAKICAgIDxnPgogICAgICAgIDxwYXRoIGZpbGw9IiNBNkFGRkQiIHN0cm9rZT0iIzVFNkVGQiIgc3Ryb2tlLXdpZHRoPSI1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNiw0NikiICBkPSJNMjMuOTQ4NTMxOCw4MCBDMjMuOTQ4NTMxOCwxMjQuMTgyNzgyIDU5LjY4ODkzOTIsMTYwIDEwMy43NzY5NzEsMTYwIEMxMjcuODExMzg2LDE2MCAxNDkuMzY1MDIsMTQ5LjM1NTY4OSAxNjQsMTMyLjUxNDQ3NiBMMTU4LjE1Nzg3MSwxMjcuMDU0ODk1IEMxNDQuOTgzNDUyLDE0Mi4zMzIzNjggMTI1LjUwNjc4OSwxNTIgMTAzLjc3Njk3MSwxNTIgQzY0LjA5Nzc0MjQsMTUyIDMxLjkzMTM3NTcsMTE5Ljc2NDUwNCAzMS45MzEzNzU3LDgwIEMzMS45MzEzNzU3LDc5LjQ3Mjg2MzIgMzEuOTM3MDI4NCw3OC45NDcwNDk1IDMxLjk0ODI3NjQsNzguNDIyNjE2NCBMNTAuMzA4OTE3OSw5NiBMNTUuODc5OTA3NCw5MC42NjY2NjY3IEwyOC4wMjQ5NTk1LDY0IEwwLDkwLjY2NjY2NjcgTDUuNTcwOTg5Niw5NiBMMjMuOTY0MzUwMiw3OC4zOTEyOTMgQzIzLjk1MzgyMSw3OC45MjYyNTc3IDIzLjk0ODUzMTgsNzkuNDYyNTA5OCAyMy45NDg1MzE4LDgwIFogTTE4My44MzQ2NTIsODAgQzE4My44MzQ2NTIsMzUuODE3MjE3OCAxNDcuNzcwNjcxLDAgMTAzLjI4MzQ5MiwwIEM3Ny42MTQ5OTIxLDAgNTQuNzUwNjg3OCwxMS45MjQwMzA1IDQwLDMwLjQ5ODk5OTUgTDQ2LjA4NzI2MzQsMzUuNzU0MzcgQzU5LjM1NDA5NSwxOC44NjIzODQgODAuMDQxNTMwNCw4IDEwMy4yODM0OTIsOCBDMTQzLjMyMTk1Myw4IDE3NS43Nzk1MzYsNDAuMjM1NDk2IDE3NS43Nzk1MzYsODAgQzE3NS43Nzk1MzYsODEuODE3NDU3OCAxNzUuNzExNzMyLDgzLjYxOTE4NzUgMTc1LjU3ODUsODUuNDAyODMwMiBMMTU3LjIzNTYxNCw2OCBMMTUxLjYxNDE4OCw3My4zMzMzMzMzIEwxNzkuNzIxMzE5LDEwMCBMMjA4LDczLjMzMzMzMzMgTDIwMi4zNzg1NzQsNjggTDE4My42MjY4NjMsODUuNzkwNzAzMSBDMTgzLjc2NDYsODMuODc4Mjg1IDE4My44MzQ2NTIsODEuOTQ3MjY3MyAxODMuODM0NjUyLDgwIFoiPjwvcGF0aD4KICAgIDwvZz4KICA8L2c+Cgo8L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10rem;
+}
+.screenshot {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-image: url('../img/screenshot.png');
+  background-size: 16rem;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.mobile {
+  display: none;
+}
+@media only screen and (max-width: 44rem) {
+  .mobile {
+    display: inline;
+  }
+  .mobile a {
+    color: white;
+  }
+  .github,
+  .image,
+  .icon,
+  .screenshot {
+    display: none;
+  }
+  .share {
+    display: none;
+  }
+  section:nth-of-type(1) {
+    padding-top: 2rem;
+  }
+  section:nth-of-type(1) h1 {
+    opacity: 1;
+  }
+  section:nth-of-type(1) h1 span {
+    display: none;
+  }
+  section:nth-of-type(1) p {
+    opacity: 1;
+  }
+  section:nth-of-type(1) article {
+    height: auto;
+  }
+  section:nth-of-type(1) article header {
+    padding-top: 0;
+    text-align: left;
+  }
+  section:nth-of-type(2) {
+    height: 4rem;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  section:nth-of-type(2) p {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  section:nth-of-type(3) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  section:nth-of-type(3) article {
+    height: auto;
+  }
+  section:nth-of-type(3) article header {
+    padding-top: 2rem;
+  }
+  section:nth-of-type(4) {
+    padding-top: 0;
+  }
+  section:nth-of-type(4) article {
+    height: auto;
+  }
+  section:nth-of-type(4) article header {
+    padding-top: 2rem;
+    text-align: left;
+  }
+  section:nth-of-type(5) {
+    display: none;
+  }
+  section:nth-of-type(6) button {
+    display: inline-block;
+  }
+  section:nth-of-type(6) p,
+  section:nth-of-type(6) form,
+  section:nth-of-type(6) input,
+  section:nth-of-type(6) button {
+    width: 100%;
+  }
+  section:nth-of-type(6) p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section:nth-of-type(6) ul {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section:nth-of-type(6) li {
+    margin-bottom: 1rem;
+  }
+  section:nth-of-type(7) p {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  section:nth-of-type(8) {
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  section:nth-of-type(8) ul {
+    width: 90%;
+  }
+  section:nth-of-type(8) li {
+    margin-bottom: 1rem;
+  }
+  section:nth-of-type(9) p {
+    color: gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  article {
+    min-width: 100%;
+  }
+  header {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .signup {
+    width: 100%;
+  }
+}

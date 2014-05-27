@@ -7,19 +7,27 @@
   <meta name="author" content="rojcyk">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0, minimal-ui">
   <meta name="keywords" content="blueprint, sketch, template, bohemia, coding, tapmates">
-  <meta name="description" content="The best way to start mockuping up your iOS projects.">
+  <meta name="description" content="The Best way to start designing your iOS apps">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@rojcyk">
   <meta name="twitter:title" content="Blueprint">
-  <meta name="twitter:description" content= "The best way to start mockuping up your iOS projects.">
+  <meta name="twitter:description" content= "The Best way to start designing your iOS apps">
 
   <meta property="og:type"   content="website">
   <meta property="og:url"    content="http://rojcyk.github.io/blueprint/">
-  <meta property="og:title"  content="Blueprint • The best way to start mockuping up your iOS projects">
+  <meta property="og:title"  content="Blueprint • The Best way to start designing your iOS apps">
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="iqcwppu8eq6d3tn"></script>
+
+    <script src="assets/js/source.min.js" type="text/javascript"></script>
+
+  <title>Blueprint • The Best way to start designing your iOS apps</title>
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,45 +35,168 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-51154663-1', 'rojcyk.github.io');
+  ga('create', 'UA-51154663-1', 'rojcyk.com');
   ga('send', 'pageview');
 
 </script>
 
-  <style>
-  @font-face{font-family:'Droid Sans';font-style:normal;font-weight:400;src:local('Droid Sans'),local('DroidSans'),url(http://themes.googleusercontent.com/static/fonts/droidsans/v4/s-BiyweUPV0v-yRb-cjciL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff')}@font-face{font-family:'Droid Serif';font-style:normal;font-weight:400;src:local('Droid Serif'),local('DroidSerif'),url(http://themes.googleusercontent.com/static/fonts/droidserif/v4/0AKsP294HTD-nvJgucYTaLrIa-7acMAeDBVuclsi6Gc.woff) format('woff')}*,*:before,*:after{box-sizing:border-box}html,body,div,section,header,footer,code,h1,h2,h3,h4,h5,h6,span,p,nav,ul,li{padding:0;margin:0}.load *{transition:none !important}.screen{animation:invisible 1s ease-out 1 1.3s forwards}.download{animation:slideIn 1s ease-out 1 2s forwards}.iphone{animation:dash 2s ease-in alternate forwards}.more{animation:slideIn 1s ease-in 1 2.5s forwards}html,body{width:100%;height:100%}body{font-size:62.5%;font-family:"Droid Serif",Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;font-weight:400;color:#fff;background-color:#4e5bff}section{width:100%;height:100%}article{width:60rem;height:40rem;position:absolute;top:50%;left:50%;margin-top:-20rem;margin-left:-30rem}h1{width:100%;height:3;font-size:43.2px;font-size:2.7rem;margin-top:8rem;margin-bottom:3rem;text-align:right;font-weight:400;font-family:"Droid Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif}h1 span{color:rgba(255,255,255,0.3);font-family:"Droid Serif",Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif}h1 br{display:none}p{font-size:22.4px;font-size:1.4rem;line-height:176%;text-align:right;color:rgba(255,255,255,0.7)}p a,p i,p b{color:#fff}p i{font-family:"Droid Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:300}p b{font-family:"Droid Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:400}p a{font-style:italic;text-decoration:none;border-bottom:2px #fff solid}p a:hover{border-bottom:none}.more{font-size:16px;font-size:1rem;font-family:"Droid Serif",Baskerville,"Baskerville Old Face","Hoefler Text",Garamond,"Times New Roman",serif;opacity:0}.more a{border-bottom:1px rgba(255,255,255,0.3) solid}.download{width:50%;height:4rem;margin-top:4rem;margin-left:50%;right:0;opacity:0;background-color:#fefefe;border-radius:1rem;font-family:"Droid Sans","HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif}.download a{width:100%;height:100%;font-size:16px;font-size:1rem;display:block;color:#4e5bff;font-weight:600;text-decoration:none;text-align:center;line-height:4rem}.blueprint{text-align:right}.info{width:30rem;height:100%;position:absolute}.description{margin-bottom:3rem}.screen{position:absolute;top:0;right:0;margin-top:8.4rem;margin-right:8.8rem;opacity:0;width:212px;height:380px;background-image:url("assets/img/screen.png")}.iphone{position:absolute;right:0;margin-top:3.5rem;margin-right:7.5rem;fill:none;stroke-dasharray:3000;stroke-dashoffset:0}@keyframes dash{from{stroke-dashoffset:3000}to{stroke-dashoffset:0}}@keyframes invisible{from{opacity:0}to{opacity:1}}@keyframes slideIn{from{opacity:0;margin-top:4rem}to{opacity:1;margin-top:3rem}}@media only screen and (max-width:60rem){.download{animation:slideIn 1s ease-out 1 0s forwards}.more{animation:slideIn 1s ease-in 1 1s forwards}.screen,svg{display:none}h1{margin-top:4rem}h1 br{display:inline}.info{width:100%}article{position:absolute;top:0;left:0;margin:0;width:94%}}
-  </style>
-
-  <title>Blueprint • The best way to start mockuping up your iOS projects</title>
-
 </head>
 <body>
 
-<section class="blueprint">
-  <article>
+  <section>
+    <article>
 
-    <div class="info">
+      <div class="image">
 
-    <h1>Blueprint <br><span>|ˈblo͞oprint|</span></h1>
+        <div class="view"></div>
 
-        <p class="description">Neatly organized <b>iOS</b><i>.sketch</i> template. <br>With <b>iPhone</b> & <b> iPad</b> support.</p>
+        <svg class="iphone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="254px" height="531px" viewBox="0 0 254 531" enable-background="new 0 0 254 531" xml:space="preserve">
 
-         <div class="download"><a href="http://codeload.github.com/rojcyk/blueprint/zip/master">DOWNLOAD</a></div>
-
-         <p class="more">More info at <a href="https://github.com/rojcyk/blueprint">Github.<br></a> Made by <a href="http://twitter.com/rojcyk">Me</a>.</p>
-
+        <path stroke="white" stroke-width="1.5" stroke-miterlimit="0" d="M211.301643,529.946476 L45.3650237,529.946476 C44.674733,529.982012 43.9796693,530 43.2803737,530 C21.4023264,530 3.66666667,512.391788 3.66666667,490.670958 L3.66666667,188.370607 L2.33333333,188.370607 C1.59695363,188.370607 1,187.624497 1,186.704122 C1,186.663009 1.00353264,171.494706 1.00353264,171.494706 C1,170.452088 1.59695363,169.705977 2.33333333,169.705977 L3.66666667,169.705977 L3.66666667,144.375407 L2.33333333,144.375407 C1.59695363,144.375407 1,143.629297 1,142.708923 C1,142.667809 1.00353264,127.499506 1.00353264,127.499506 C1,126.456888 1.59695363,125.710777 2.33333333,125.710777 L3.66666667,125.710777 L3.66666667,100.380208 L2.33333333,100.380208 C1.54112093,100.308311 1,99.5899994 1,98.7137227 L1,77.4699075 C1,76.5063443 1.54123895,75.7879714 2.22872337,75.7212853 L3.66666667,75.7162318 L3.66666667,42.719832 C3.66666667,21.5519147 20.5108795,4.28990531 41.6177217,3.42480384 C42.3666517,3.3984985 42.822606,3.39078967 43.2803737,3.39078967 C43.7381417,3.39078967 44.194096,3.3984985 44.64823,3.41379651 L170.666667,3.41379651 C170.666667,1.65459939 171.412859,1.05771089 172.333333,1.05771089 C172.402043,1.05771089 209.673968,1 209.673968,1 C210.591081,1.06086771 211.333333,1.65654586 211.333333,2.39089876 L212.018437,3.41379651 C212.472571,3.3984985 212.928525,3.39078967 213.386293,3.39078967 C213.844061,3.39078967 214.300015,3.3984985 214.754149,3.41379651 C236.378169,4.51873134 253,21.6921111 253,42.719832 L253,490.670958 C253,512.391788 235.26434,530 213.386293,530 C212.686997,530 211.991934,529.982012 211.301643,529.946476 L211.301643,529.946476 Z M128,514.057717 C140.70255,514.057717 151,503.760267 151,491.057717 C151,478.355167 140.70255,468.057717 128,468.057717 C115.29745,468.057717 105,478.355167 105,491.057717 C105,503.760267 115.29745,514.057717 128,514.057717 L128,514.057717 Z M128.5,33 C130.985282,33 133,30.9852815 133,28.5 C133,26.0147185 130.985282,24 128.5,24 C126.014718,24 124,26.0147185 124,28.5 C124,30.9852815 126.014718,33 128.5,33 L128.5,33 Z M111.293827,55 C108.370127,55 106,52.5375661 106,49.5 C106,46.4624339 108.370127,44 111.293827,44 C111.390759,44 111.487082,44.0027067 111.58273,44.008051 L145.706173,44 C148.629873,44 151,46.4624339 151,49.5 C151,52.5375661 148.629873,55 145.706173,55 L111.58273,55 C111.487082,54.9972933 111.390759,55 111.293827,55 L111.293827,55 Z M21,78 L21,458 L235,458 L235,78 L21,78 L21,78 Z">
+      </svg>
     </div>
 
-    <div class="screen"></div>
+      <header>
+        <h1>Blueprint <span>|ˈblo͞oˌprint|</span></h1>
 
-    <svg class="iphone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="254px" height="531px" viewBox="0 0 254 531" enable-background="new 0 0 254 531" xml:space="preserve">
+        <p class="fadeIn">Neatly organized <span>iOS<a href="#">.sketch</a> template</span> with iPhone & iPad support.</p>
 
-      <path class="iphone" stroke="white" stroke-width="1.5" stroke-miterlimit="0" d="M211.301643,529.946476 L45.3650237,529.946476 C44.674733,529.982012 43.9796693,530 43.2803737,530 C21.4023264,530 3.66666667,512.391788 3.66666667,490.670958 L3.66666667,188.370607 L2.33333333,188.370607 C1.59695363,188.370607 1,187.624497 1,186.704122 C1,186.663009 1.00353264,171.494706 1.00353264,171.494706 C1,170.452088 1.59695363,169.705977 2.33333333,169.705977 L3.66666667,169.705977 L3.66666667,144.375407 L2.33333333,144.375407 C1.59695363,144.375407 1,143.629297 1,142.708923 C1,142.667809 1.00353264,127.499506 1.00353264,127.499506 C1,126.456888 1.59695363,125.710777 2.33333333,125.710777 L3.66666667,125.710777 L3.66666667,100.380208 L2.33333333,100.380208 C1.54112093,100.308311 1,99.5899994 1,98.7137227 L1,77.4699075 C1,76.5063443 1.54123895,75.7879714 2.22872337,75.7212853 L3.66666667,75.7162318 L3.66666667,42.719832 C3.66666667,21.5519147 20.5108795,4.28990531 41.6177217,3.42480384 C42.3666517,3.3984985 42.822606,3.39078967 43.2803737,3.39078967 C43.7381417,3.39078967 44.194096,3.3984985 44.64823,3.41379651 L170.666667,3.41379651 C170.666667,1.65459939 171.412859,1.05771089 172.333333,1.05771089 C172.402043,1.05771089 209.673968,1 209.673968,1 C210.591081,1.06086771 211.333333,1.65654586 211.333333,2.39089876 L212.018437,3.41379651 C212.472571,3.3984985 212.928525,3.39078967 213.386293,3.39078967 C213.844061,3.39078967 214.300015,3.3984985 214.754149,3.41379651 C236.378169,4.51873134 253,21.6921111 253,42.719832 L253,490.670958 C253,512.391788 235.26434,530 213.386293,530 C212.686997,530 211.991934,529.982012 211.301643,529.946476 L211.301643,529.946476 Z M128,514.057717 C140.70255,514.057717 151,503.760267 151,491.057717 C151,478.355167 140.70255,468.057717 128,468.057717 C115.29745,468.057717 105,478.355167 105,491.057717 C105,503.760267 115.29745,514.057717 128,514.057717 L128,514.057717 Z M128.5,33 C130.985282,33 133,30.9852815 133,28.5 C133,26.0147185 130.985282,24 128.5,24 C126.014718,24 124,26.0147185 124,28.5 C124,30.9852815 126.014718,33 128.5,33 L128.5,33 Z M111.293827,55 C108.370127,55 106,52.5375661 106,49.5 C106,46.4624339 108.370127,44 111.293827,44 C111.390759,44 111.487082,44.0027067 111.58273,44.008051 L145.706173,44 C148.629873,44 151,46.4624339 151,49.5 C151,52.5375661 148.629873,55 145.706173,55 L111.58273,55 C111.487082,54.9972933 111.390759,55 111.293827,55 L111.293827,55 Z M21,78 L21,458 L235,458 L235,78 L21,78 L21,78 Z">
-    </svg>
+        <a id="github" class="fadeIn button github" href="http://codeload.github.com/rojcyk/blueprint/zip/master"><strong>Get</strong> from Github</a><BR />
 
-  </article>
-</section>
+        <p class="mobile">Website is best viewed on desktop. <a href="mailto:?subject=Blueprint • The Best way to start designing your iOS apps">Email</a> it to yourself so you can view it later.</p>
+
+        <div class='share'>
+
+          <iframe src="http://ghbtns.com/github-btn.html?user=rojcyk&repo=blueprint&type=watch&count=true"
+    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rojcyk.github.io/blueprint/" data-text="Awesome way to start designing your iOS project" data-via="rojcyk">Tweet</a>
+
+        </div>
+
+      </header>
+    </article>
+  </section>
+
+  <section class="more">
+
+  <a id="more" class="story" href="">What is the story behind this?</a>
+
+  <p>"Should designers code?" No, I am not joking. The number of articles around this topic is incredible. The amount is so big that it got me questioning my own skills.</p>
+
+  <p>Am I able to do some coding or dev work? Will I be overrun by those incredibly skilled youngsters? I needed to know. I had a huge sketch template based on my experience from some really big projects. It sounded like a great idea to build a website around it and make it public.</p>
+
+  <p>So after a little bit of HTML, LESS, CoffeScript, <a target="_blank" href="http://www.greensock.com/gsap-js/">GSAP js</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a>, Google Analytics, Git and SVG animation time I made this and I feel like a lot smarter guy already! Sure, it will take some time before I'll be able to use these tools effectively but it was a great learning experience.</p>
+
+  <p>Feel free to like it at <a href="" target="_blank">Dribbble</a>, give feedback at <a href="" target="_blank">Redpen</a> (<a href="" target="_blank">Mobile</a>), report bugs at <a href="" target="_blank">GitHub</a> or simply comment at <a href="" target="_blank">Designer News</a> :]</p>
+
+  <p>This website is made with &lt;3 for the sake of learning.</p>
+
+  </section>
+
+  <section>
+    <article>
+
+      <div class="icon"></div>
+
+      <header>
+        <h2>Symbols</h2>
+
+        <p>Editable Status Bar, Navigation Bar, Segment Controls, Keybords, Switches, Alerts, Popups, Tables & others all connected via symbols.</p>
+
+      </header>
+    </article>
+  </section>
+
+  <section>
+    <article>
+
+      <div class="screenshot"></div>
+
+      <header>
+        <h2>Not Blue</h2>
+
+        <p>Ok I lied. Even though I call it Blueprint the source file is not blue :D </p>
+
+      </header>
+    </article>
+  </section>
+
+  <section>
+    <article>
+
+      <h2>Inspiration taken from</h2>
+
+      <ul>
+        <li>
+          <span>Apple's documentation</span>
+          <a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/Bars.html#//apple_ref/doc/uid/TP40006556-CH12-SW1">developer.apple.com</a>
+        </li>
+
+        <li>
+          <span>The iOS Design Cheat Sheet</span>
+          <a href="http://ivomynttinen.com/blog/the-ios-7-design-cheat-sheet/">ivomynttinen.com</a>
+        </li>
+
+        <li>
+          <span>My app design workflow</span>
+          <a href="http://bjango.com/articles/appdesignworkflow/">bjango.com</a></li>
+      </ul>
+
+    </article>
+  </section>
+
+  <section>
+    <article>
+
+      <h2>Maybe you prefer Dropbox?</h2>
+
+      <div id="save">
+        <a id="dropbox" class="button dropbox" href="http://codeload.github.com/rojcyk/blueprint/zip/master"><strong>Save</strong> to Dropbox</a>
+      </div>
+
+    </article>
+  </section>
+
+  <section>
+    <article>
+
+      <h2>I am Denis Rojcyk</h2>
+
+      <p> I design apps at <a href="http://www.tapmates.com">Tapmates</a>. I like to <a href="http://twitter.com/rojcyk">tweet</a> and create tools to make designers life easier. We could spend a ton of time talking about UX and I would not get tired. In addition to design and UX I am interested in current state of web and its tech. During winter you can find me riding pow around the globe. If you would like to recieve news about my little helpers, future projects or possibly blogposts you can subscribe here.</p>
+
+      <form class="signup" action="http://rojcyk.createsend.com/t/d/s/gihjt/" method="post">
+        <input id="fieldEmail" placeholder="Your email" name="cm-gihjt-gihjt" type="email" required />
+        <button type="submit">Subscribe to rojcyk newsletter</button>
+      </form>
+
+    </article>
+  </section>
+
+   <section>
+    <article>
+
+      <ul>
+        <li><a target="_blank" href="http://www.twitter.com/rojcyk">Twitter</a></li>
+        <li><a target="_blank" href="http://cz.linkedin.com/in/rojcyk/">LinkedIn</a></li>
+        <li><a target="_blank" href="https://github.com/rojcyk/">GitHub</a></li>
+        <li><a target="_blank" href="http://www.dribbble.com/rojcyk">Dribbble</a></li>
+        <li><a target="_blank" href="https://plus.google.com/106508034109252234271/">Google+</a></li>
+      </ul>
+
+    </article>
+  </section>
+
+   <section>
+    <article>
+
+      <p>Oh you have made it so far. Here is an insteresting fact: <strong>Over 42%</strong> percent of users refreshes the site at least <strong>4</strong> times. </p>
+
+    </article>
+  </section>
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>
 </html>

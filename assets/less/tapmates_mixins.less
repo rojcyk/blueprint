@@ -35,7 +35,8 @@
 }
 
 .font-size(@value) when (isnumber(@value)) {
-  font-size: unit(@value * 16, px); font-size: unit(@value, rem);
+  font-size: unit(round(@value * 16, 1), px);
+  font-size: unit(@value, rem);
 }
 
 .dont-touch(){
@@ -47,7 +48,7 @@
 .debug() {
   background-color: rgba(255,0,0,.1);
 }
- 
+
 // For clearing floats like a boss
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix() {
@@ -61,7 +62,7 @@
     clear: both;
   }
 }
- 
+
 // Sizing shortcuts
 .size(@width: auto, @height: auto,) {
   width: @width;
@@ -71,7 +72,7 @@
 .square(@size) {
   .size(@size, @size);
 }
- 
+
 // CSS image replacement
 // https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
 .hide-text() {
