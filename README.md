@@ -1,15 +1,23 @@
 # What is Blueprint?
 
-Blueprint is a simple sketch iOS template. It has all the stuff necessary for designing iOS apps right away.
+Neatly organized iOS.[sketch](http://bohemiancoding.com/sketch/) template with iPhone & iPad support.
 
-### Why Blueprint?
+### What is the story behind this?
 
-Blueprint was develop as a missing piece in our workflow here [@tapmates](http://tapmates.com/). I made it as we needed it to be.
+"Should designers code?" No, I am not joking. The number of articles around this topic is incredible. The amount is so big that it got me questioning my own skills.
 
-### 70% less BS than in other templates
+Am I able to do some coding or dev work? Will I be overrun by those incredibly skilled youngsters? I needed to know. I had a huge sketch template based on my experience from some really big projects. It sounded like a great idea to build a website around it and make it public.
 
-Blueprint has only the stuff necessary for developing iOS apps. Portrait and landscape views for both iPad and iPhone. Couple of switches and tabs, editable keyboard and thats it. All connected via symbols (I tried to make the symbols count as small as possible).
+So after a little bit of HTML, LESS, CoffeScript, [GSAP js](http://www.greensock.com/gsap-js/), [Jekyll](http://jekyllrb.com), Google Analytics, Git and SVG animation time I made this and I feel like a lot smarter guy already! Sure, it will take some time before I'll be able to use these tools effectively but it was a great learning experience.
 
-### 120% pixel perfect
+Feel free to like it at [Dribbble](#) , give feedback at [Redpen](#) ([Mobile](#)), report bugs at [GitHub](#) or simply comment at [Designer News](#) :]
 
-All the pixels are aligned as they are in iOS 7.1.
+This website is made with <3 for the sake of learning.
+
+### Symbols
+
+Editable Status Bar, Navigation Bar, Segment Controls, Keybords, Switches, Alerts, Popups, Tables & others all connected via symbols.
+
+### Not Blue
+
+Ok I lied. Even though I call it Blueprint the source file is not blue :D
