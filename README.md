@@ -10,8 +10,6 @@ Am I able to do some coding or dev work? Will I be overrun by those incredibly s
 
 So after a little bit of HTML, LESS, CoffeScript, [GSAP js](http://www.greensock.com/gsap-js/), [Jekyll](http://jekyllrb.com), Google Analytics, Git and SVG animation time I made this and I feel like a lot smarter guy already! Sure, it will take some time before I'll be able to use these tools effectively but it was a great learning experience.
 
-Feel free to like it at [Dribbble](#) , give feedback at [Redpen](#) ([Mobile](#)), report bugs at [GitHub](#) or simply comment at [Designer News](#) :]
-
 This website is made with <3 for the sake of learning.
 
 ### Symbols
