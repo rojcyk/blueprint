@@ -1,14 +1,3 @@
 # Blueprint
 
-Sketch iOS 8 Universal app template.
-
-![screenshot](https://raw.githubusercontent.com/rojcyk/blueprint/master/README/screenshot.png)
-
-## Features
-
-- **Pixel perfect copy** of iOS native app UI.
-- Over **30 symbols** containing most used iOS components.
-- Editable black & white **keyboards**.
-- For iPhone and iPad, portrait and landscape.
-
-You can follow me on [twitter](http://twitter.com/rojcyk) for future updates.
+Sketch iOS 8 Universal app template. If you download this template and redistribute it to any Sketch download catalogues please leave link to [Blueprint](http://www.rojcyk.com/blueprint) in the description. Future updates might include more devices as well as controllers.
