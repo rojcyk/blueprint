@@ -1,0 +1,111 @@
+{
+    "name": "iOS Blueprint",
+    "description": "Plugin to make designing iOS apps, and exporting assets easier.",
+    "author": "@rojcyk",
+    "authorEmail" : "denis@rojcyk.com",
+    "homepage": "https://github.com/rojcyk/blueprint",
+    "identifier": "com.rojcyk.sketch.blueprint",
+    "compatibleVersion": 3.4,
+    "version": "1.0",
+    "commands" : [{
+        "script" : "export.js",
+        "handler" : "exportAppIconHandler",
+        "name" : "Export App Icon",
+        "identifier" : "exportAppIcon",
+        "shortcut" : ""
+    },{
+        "script" : "export.js",
+        "handler" : "exportSelectedAssetsHandler",
+        "name" : "Export Selected Asset(s)",
+        "identifier" : "exportSelectedAssets",
+        "shortcut" : "control shift s"
+    },{
+        "script" : "export.js",
+        "handler" : "exportAllMockupsHandler",
+        "name" : "Export All Artboards - @2x",
+        "identifier" : "exportAllMockups",
+        "shortcut" : ""
+    },{
+        "script" : "export.js",
+        "handler" : "exportSelectedMockupsHandler",
+        "name" : "Export Selected Artboard(s) - @2x",
+        "identifier" : "exportSelectedMockups",
+        "shortcut" : "control shift a"
+    },{
+        "script" : "add.js",
+        "handler" : "newProjectHandler",
+        "name" : "New App Template",
+        "identifier" : "newProject",
+        "shortcut" : "control shift n"
+    },{
+        "script" : "add.js",
+        "handler" : "newAppstoreHandler",
+        "name" : "New App Store Template",
+        "identifier" : "newAppstore",
+        "shortcut" : ""
+    },{
+        "script" : "add.js",
+        "handler" : "createIconHandler",
+        "name" : "Add Icon Frame",
+        "identifier" : "addIcon",
+        "shortcut" : "control shift x"
+    },{
+        "script" : "add.js",
+        "handler" : "createTableHandler",
+        "name" : "Add Table",
+        "identifier" : "addTable",
+        "shortcut" : "control shift t"
+    },{
+        "script" : "add.js",
+        "handler" : "addIphonePortraitHandler",
+        "name" : "iPhone Portrait",
+        "identifier" : "addIphonePortrait",
+        "shortcut" : "control shift u"
+    },{
+        "script" : "add.js",
+        "handler" : "addIphoneLandscapeHandler",
+        "name" : "iPhone Landscape",
+        "identifier" : "addIphoneLandscape",
+        "shortcut" : ""
+    },{
+        "script" : "add.js",
+        "handler" : "addIpadPortraitHandler",
+        "name" : "iPad Portrait",
+        "identifier" : "addIpadPortrait",
+        "shortcut" : ""
+    },{
+        "script" : "add.js",
+        "handler" : "addIpadLandscapeHandler",
+        "name" : "iPad Landscape",
+        "identifier" : "addIpadLandscape",
+        "shortcut" : ""
+    }],
+    "menu" : {
+        "isRoot": false,
+        "title" : "App Blueprint",
+        "items" : [
+            "newProject",
+            "newAppstore",
+            {
+                "title": "Add Device",
+                "items": [
+                    "addIphonePortrait",
+                    "addIphoneLandscape",
+                    "addIpadPortrait",
+                    "addIpadLandscape"
+                ],
+            },
+            "addIcon",
+            "addTable",
+            "exportAppIcon",
+            "exportSelectedAssets",
+            {
+                "title": "Export Artboards",
+                "items": [
+                    "exportAllMockups",
+                    "exportSelectedMockups"
+                ],
+            }
+        ]
+    },
+}
