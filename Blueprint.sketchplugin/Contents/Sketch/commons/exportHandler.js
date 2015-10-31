@@ -31,9 +31,18 @@
 var ExportHandler = function(context, path) {
 
     this.context      = context;
+
+    // There is various ways how to ask for export location
+
+    // This will ask for export location
     // this.exportPath   = this.exportPath();
+
+    // Or you can use a predefined export location
     // this.exportPath   = "/Users/rojcyk/Desktop/test/";
-    this.exportPath   = context.scriptPath.substring(0, context.scriptPath.indexOf("/",7)) + "/Desktop/Blueprint Export Files/";
+
+    // Or you can export files to desktop in a folder with
+    // current file name
+    this.exportPath   = context.scriptPath.substring(0, context.scriptPath.indexOf("/",7)) + "/Desktop/" + this.documentName();
 
     this.finder       = new Finder(context);
 };
@@ -253,7 +262,6 @@ ExportHandler.prototype = {
         slice = this.scaleLayer(layer, scale);
 
     if (this.isGroup(layer)) {
-      // Could be deleted, only for debuging purposes
       this.displayMessage("Exporting file: " + name + sufix);
 
       [doc saveArtboardOrSlice:slice toFile: path];
@@ -264,11 +272,15 @@ ExportHandler.prototype = {
 
   /** Returns slice from layer and scale. */
   scaleLayer: function(layer, scale) {
-    // var rect   = [layer trimmedRectForSlice];
-    var rect = [MSSliceTrimming trimmedRectForSlice:layer];
-    var slice   = [[MSSliceMaker slicesFromExportableLayer:layer] firstObject];
 
-    log(scale);
+    // originaly working version ~ now broken. Waiting for fix
+    // var rect    = [layer absoluteInfluenceRect];
+    // var slice   = [[MSSliceMaker slicesFromExportableLayer:layer inRect:rect] firstObject];
+
+    var rect  = [MSSliceTrimming trimmedRectForSlice:layer];
+    var slice = [[MSSliceMaker slicesFromExportableLayer:layer] firstObject];
+
+    log(rect);
 
     [slice setShouldTrim:0];
     [slice setScale:scale];
@@ -314,5 +326,24 @@ ExportHandler.prototype = {
   */
   isDefinedAttr: function(attr) {
     return attr != undefined && attr != null && attr != false && attr != '';
+  },
+
+  /**
+  * Very dirty way of getting the name of the current file
+  * Fuck that, couldn't get it work any other way
+  */
+  documentName: function() {
+    var doc = this.context.document,
+        url = "" + doc.fileURL();
+
+    var folder;
+
+    if (url != "null") {
+      folder = url.substring(url.lastIndexOf("/") + 1, url.lastIndexOf("."));
+    } else {
+      folder = "Untitled";
+    }
+
+    return folder + " assets/";
   }
 };
