@@ -79,6 +79,12 @@
         "name" : "iPad Landscape",
         "identifier" : "addIpadLandscape",
         "shortcut" : ""
+    },{
+        "script" : "help.js",
+        "handler" : "helpHandler",
+        "name" : "Help",
+        "identifier" : "help",
+        "shortcut" : ""
     }],
     "menu" : {
         "isRoot": false,
@@ -104,7 +110,8 @@
                     "exportAllMockups",
                     "exportSelectedMockups"
                 ],
-            }
+            },
+            "help"
         ]
     },
 }
