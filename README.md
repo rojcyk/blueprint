@@ -4,6 +4,11 @@
 
 iOS Blueprint plugin is here to accelerate your iOS app design workflow. It contains **lightweight** iPhone and iPad template, App Store Screenshot template, as well as collections of export, and canvas manipulation scripts.
 
+#### Contact
+- [@rojcyk](https://twitter.com/rojcyk)
+- [Email](mailto:hi@rojcyk.com)
+- [Website](http://rojcyk.com)
+
 ## Installation
 
 1. [Download the ZIP file containing the plugin](https://github.com/rojcyk/blueprint/archive/master.zip)
