@@ -23,7 +23,6 @@ iOS Blueprint plugin is here to accelerate your iOS app design workflow. It cont
 The script is a perfect companion, if you use Blueprint as your starting app template. If not, its functionality is fairly limited.
 
 - **New App Template** - `⌃ + ⇧ + N` Will generate a new Blueprint template at your desired location. See the [homepage](http://rojcyk.com/blueprint/) for its full functionality.
-
 - **New App Store Template** - Will generate a new easily editable
 template. Fully connected via layer styles, text styles and symbols. iPhone and iPad support for both portrait and landscape modes. Contains White, Golden and Black devices, as well as their black and white outline variations.
 
