@@ -227,6 +227,7 @@ ExportHandler.prototype = {
         this.exportLayer(icon, 0.667, "-40@2x.png","");
         this.exportLayer(icon, 1,     "-60@2x.png","");
         this.exportLayer(icon, 1.266, "-76@2x.png","");
+        this.exportLayer(icon, 1.391, "-83@2x.png","");
 
         this.exportLayer(icon, 0.725, "-29@3x.png","");
         this.exportLayer(icon, 1,     "-40@3x.png","");
