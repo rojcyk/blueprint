@@ -52,14 +52,9 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 - Segment Controllers
 - System Icons
 - Keyboards
+- Table Cells
 
 ## Change log 
 
 #### 7th September 2016
 - Removed legacy files and added new Craft Library
-
-#### Legacy 
-- Only Sketch 3.4 (Completely rewritten from scratch)
-- New powerful classes to ease development of your plugins. [Exporter](https://gist.github.com/rojcyk/7a24007beb75c5641ed4) and [Finder classes](https://gist.github.com/rojcyk/c5635b097ba52618249f).
-- New Blueprint template, cleaner and easier to work with.
-- Exporting App Icon is now available via script
