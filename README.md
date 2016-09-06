@@ -6,7 +6,7 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 
 
-![alt text](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/hero.png)
+![alt text](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/hero.jpg)
 
 ## So, why should you use this easy to use, pixel perfect, responsive library?
 
