@@ -52,6 +52,8 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 - Keyboards
 - Table Cells
 
+## [Download it here!](https://github.com/rojcyk/blueprint/archive/master.zip)
+
 ## Change log 
 
 #### 7th September 2016
