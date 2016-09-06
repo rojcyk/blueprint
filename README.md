@@ -14,7 +14,7 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 - **It is easy to use**. This kit is made so you don’t have to open various libraries or other sketch files to copy stuff from. Just start with this blueprint, or use it as a Craft Library and you are set.
 
-- **Easily Customisable Perfection**. It wouldn’t make sense to have a template which is not 1:1 with current iOS state. Thus *pixel perfection is a must*, but it doesn’t end there. All the layers are connected with layer styles, so all you have to do is to style just one layer and Sketch takes care of the rest.
+- **It is easily customisable perfection**. It wouldn’t make sense to have a template which is not 1:1 with current iOS state. Thus *pixel perfection is a must*, but it doesn’t end there. All the layers are connected with layer styles, so all you have to do is to style just one layer and Sketch takes care of the rest.
 
 ## Sounds good right?! Lets see what you can find inside.
 
