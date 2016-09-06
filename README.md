@@ -10,7 +10,7 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 ## So, why should you use this easy to use, pixel perfect, responsive library?
 
-- **It is lightweight**. Only 1.5MB! Other templates/libraries are so huge, you need a map to even see them. This UIKit is the exact opposite. It contains only the most essential controllers.
+- **It is lightweight**. Only 1.5MB! Other templates/libraries are so huge, you need a map to use them. This UIKit is the exact opposite. It contains only the most essential controllers.
 
 - **It is easy to use**. This kit is made so you don’t have to open various libraries or other sketch files to copy stuff from. Just start with this blueprint, or use it as a Craft Library and you are set.
 
