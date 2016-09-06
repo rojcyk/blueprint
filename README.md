@@ -2,9 +2,7 @@
 
 Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both iPhone and iPad. Blueprint works the best with [Craft by Invision](https://www.invisionapp.com/craft) but can be used as a standalone sketch template.
 
-[Follow me on Twitter](https://twitter.com/rojcyk) if you wish to be notified about any future changes.
-
-
+[Follow me on Twitter](https://twitter.com/rojcyk) if you wish to be notified about any future changes, or feel free to [follow me on Medium](https://medium.com/@rojcyk) for tips and tricks on how to improve your app design workflow!
 
 ![alt text](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/hero.jpg)
 
