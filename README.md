@@ -12,7 +12,7 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 - **It is lightweight**. Only 1.5MB! Other templates/libraries are so huge, you need a map to use them. This UIKit is the exact opposite. It contains only the most essential controllers.
 
-- **It is easy to use**. This kit is made so you don’t have to open various libraries or other sketch files to copy stuff from. Just start with this blueprint, or use it as a Craft Library and you are set.
+- **It is easy to use**. This UIKit was made in a way so that you don’t have to open various libraries or other sketch files just to go on a copy/paste spree. Just start with this blueprint, or use the Craft Library and you are set.
 
 - **It is easily customisable perfection**. It wouldn’t make sense to have a template which is not 1:1 with current iOS state. Thus *pixel perfection is a must*, but it doesn’t end there. All the layers are connected with layer styles, so all you have to do is to style just one layer and Sketch takes care of the rest.
 
