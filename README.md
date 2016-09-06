@@ -4,7 +4,7 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 [Follow me on Twitter](https://twitter.com/rojcyk) if you wish to be notified about any future changes.
 
-![alt text](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/hero.png)
+![alt text](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/hero.png)
 
 ## So, why should you use this easy to use, pixel perfect, responsive library?
 
@@ -18,31 +18,31 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 ### Status Bar
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/1-statusbar.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/1-statusbar.gif)
 
 ### Navigation Bar
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/2-navbar.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/2-navbar.gif)
 
 ### Search Bar
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/3-searchbar.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/3-searchbar.gif)
 
 ### Tabbar
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/4-tabbar.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/4-tabbar.gif)
 
 ### Action Sheet
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/5-action-sheet.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/5-action-sheet.gif)
 
 ### Popup
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/6-popup.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/6-popup.gif)
 
 ### Table Contents
 
-![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint-legacy/gh-pages/assets/7-table.gif)
+![Status Bar](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/7-table.gif)
 
 ### And others …
 
