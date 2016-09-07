@@ -4,6 +4,8 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 [Follow me on Twitter](https://twitter.com/rojcyk) if you wish to be notified about any future changes, or feel free to [follow me on Medium](https://medium.com/@rojcyk) for tips and tricks on how to improve your app design workflow!
 
+**Blueprint serves as a starting point for your designs, so you can customise it to your needs. It is not a complete iOS 10 redraw.**
+
 ![alt text](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/hero.jpg)
 
 ## So, why should you use this easy to use, pixel perfect, responsive library?
