@@ -6,6 +6,8 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 **Blueprint serves as a starting point for your designs, so you can customise it to your needs. It is not a complete iOS 10 redraw.**
 
+- If you are missing the SFUI font, [DOWNLOAD IT HERE](https://developer.apple.com/fonts/).
+
 ![alt text](https://raw.githubusercontent.com/rojcyk/blueprint/gh-pages/assets/hero.jpg)
 
 ## So, why should you use this easy to use, pixel perfect, responsive library?
