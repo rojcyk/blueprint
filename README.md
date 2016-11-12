@@ -60,5 +60,8 @@ Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both
 
 ## Change log 
 
+#### 12th November 2016
+- Added support for nested symbols and Sketch 41
+
 #### 7th September 2016
 - Removed legacy files and added new Craft Library
