@@ -1,4 +1,4 @@
-# Blueprint - The first responsive Craft library
+# Blueprint - The first responsive Sketch library
 
 Introducing the first responsive iOS 10 Craft library for Sketch. Ready for both iPhone and iPad. Blueprint works the best with [Craft by Invision](https://www.invisionapp.com/craft) but can be used as a standalone sketch template.
 
